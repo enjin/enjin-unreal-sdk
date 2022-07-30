@@ -1,0 +1,32 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.0-beta.1",
+	"FriendlyName": "Enjin SDK",
+	"Description": "A SDK for creating games using the Enjin blockchain platform in Unreal Engine.",
+	"Category": "Other",
+	"CreatedBy": "Enjin Pte. Ltd.",
+	"CreatedByURL": "https://enjin.io/",
+	"DocsURL": "https://docs.enjin.io/",
+	"SupportURL": "https://enjin.io/support",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "EnjinSdk",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "EditorTests",
+			"Enabled": true,
+			"Optional": true
+		}
+	]
+}
