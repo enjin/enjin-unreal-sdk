@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "Modules/ModuleManager.h"
 
-class FEnjinSdkModule : public IModuleInterface
+class FEnjinSdkCoreModule : public IModuleInterface
 {
 public:
 	virtual void StartupModule() override;
