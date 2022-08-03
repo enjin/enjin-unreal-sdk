@@ -15,7 +15,7 @@ namespace Player
 /**
  * @brief Request for sending one or more assets in a single transaction.
  */
-class ENJINSDK_API FAdvancedSendAsset final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FAdvancedSendAsset final : public GraphQl::IGraphQlRequest,
                                               public Shared::TTransactionFragmentArguments<FAdvancedSendAsset>
 {
 public:
@@ -71,47 +71,47 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Player::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Player::FAdvancedSendAsset&
 TTransactionFragmentArguments<Player::FAdvancedSendAsset>::SetTransactionAssetIdFormat(
 	const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Player::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Player::FAdvancedSendAsset&
 TTransactionFragmentArguments<Player::FAdvancedSendAsset>::SetWithAssetData();
 
-template ENJINSDK_API Player::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Player::FAdvancedSendAsset&
 TTransactionFragmentArguments<Player::FAdvancedSendAsset>::SetWithBlockchainData();
 
-template ENJINSDK_API Player::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Player::FAdvancedSendAsset&
 TTransactionFragmentArguments<Player::FAdvancedSendAsset>::SetWithEncodedData();
 
-template ENJINSDK_API Player::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Player::FAdvancedSendAsset&
 TTransactionFragmentArguments<Player::FAdvancedSendAsset>::SetWithError();
 
-template ENJINSDK_API Player::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Player::FAdvancedSendAsset&
 TTransactionFragmentArguments<Player::FAdvancedSendAsset>::SetWithLogEvent();
 
-template ENJINSDK_API Player::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Player::FAdvancedSendAsset&
 TTransactionFragmentArguments<Player::FAdvancedSendAsset>::SetWithMeta();
 
-template ENJINSDK_API Player::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Player::FAdvancedSendAsset&
 TTransactionFragmentArguments<Player::FAdvancedSendAsset>::SetWithNonce();
 
-template ENJINSDK_API Player::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Player::FAdvancedSendAsset&
 TTransactionFragmentArguments<Player::FAdvancedSendAsset>::SetWithReceipt();
 
-template ENJINSDK_API Player::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Player::FAdvancedSendAsset&
 TTransactionFragmentArguments<Player::FAdvancedSendAsset>::SetWithReceiptLogs();
 
-template ENJINSDK_API Player::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Player::FAdvancedSendAsset&
 TTransactionFragmentArguments<Player::FAdvancedSendAsset>::SetWithSignedTxs();
 
-template ENJINSDK_API Player::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Player::FAdvancedSendAsset&
 TTransactionFragmentArguments<Player::FAdvancedSendAsset>::SetWithState();
 
-template ENJINSDK_API Player::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Player::FAdvancedSendAsset&
 TTransactionFragmentArguments<Player::FAdvancedSendAsset>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Player::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Player::FAdvancedSendAsset&
 TTransactionFragmentArguments<Player::FAdvancedSendAsset>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

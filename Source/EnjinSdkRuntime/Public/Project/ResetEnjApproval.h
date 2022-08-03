@@ -14,7 +14,7 @@ namespace Project
 /**
  * @brief Request for resetting the crypto items contract approval for ENJ.
  */
-class ENJINSDK_API FResetEnjApproval final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FResetEnjApproval final : public GraphQl::IGraphQlRequest,
                                              public TTransactionRequestArguments<FResetEnjApproval>
 {
 public:
@@ -49,7 +49,7 @@ public:
 
 // region TTransactionRequestArguments
 
-template ENJINSDK_API FResetEnjApproval&
+template ENJINSDKRUNTIME_API FResetEnjApproval&
 TTransactionRequestArguments<FResetEnjApproval>::SetEthAddress(FString Address);
 
 // endregion TTransactionRequestArguments
@@ -59,47 +59,47 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Project::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Project::FResetEnjApproval&
 TTransactionFragmentArguments<Project::FResetEnjApproval>::SetTransactionAssetIdFormat(
 	const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Project::FResetEnjApproval&
 TTransactionFragmentArguments<Project::FResetEnjApproval>::SetWithAssetData();
 
-template ENJINSDK_API Project::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Project::FResetEnjApproval&
 TTransactionFragmentArguments<Project::FResetEnjApproval>::SetWithBlockchainData();
 
-template ENJINSDK_API Project::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Project::FResetEnjApproval&
 TTransactionFragmentArguments<Project::FResetEnjApproval>::SetWithEncodedData();
 
-template ENJINSDK_API Project::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Project::FResetEnjApproval&
 TTransactionFragmentArguments<Project::FResetEnjApproval>::SetWithError();
 
-template ENJINSDK_API Project::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Project::FResetEnjApproval&
 TTransactionFragmentArguments<Project::FResetEnjApproval>::SetWithLogEvent();
 
-template ENJINSDK_API Project::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Project::FResetEnjApproval&
 TTransactionFragmentArguments<Project::FResetEnjApproval>::SetWithMeta();
 
-template ENJINSDK_API Project::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Project::FResetEnjApproval&
 TTransactionFragmentArguments<Project::FResetEnjApproval>::SetWithNonce();
 
-template ENJINSDK_API Project::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Project::FResetEnjApproval&
 TTransactionFragmentArguments<Project::FResetEnjApproval>::SetWithReceipt();
 
-template ENJINSDK_API Project::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Project::FResetEnjApproval&
 TTransactionFragmentArguments<Project::FResetEnjApproval>::SetWithReceiptLogs();
 
-template ENJINSDK_API Project::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Project::FResetEnjApproval&
 TTransactionFragmentArguments<Project::FResetEnjApproval>::SetWithSignedTxs();
 
-template ENJINSDK_API Project::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Project::FResetEnjApproval&
 TTransactionFragmentArguments<Project::FResetEnjApproval>::SetWithState();
 
-template ENJINSDK_API Project::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Project::FResetEnjApproval&
 TTransactionFragmentArguments<Project::FResetEnjApproval>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Project::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Project::FResetEnjApproval&
 TTransactionFragmentArguments<Project::FResetEnjApproval>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

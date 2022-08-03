@@ -15,7 +15,7 @@ namespace Model
 /**
  * @brief Models sorting input for transactions
  */
-class ENJINSDK_API FTransactionSortInput final : public Serialization::ISerializable
+class ENJINSDKRUNTIME_API FTransactionSortInput final : public Serialization::ISerializable
 {
 public:
 	/**

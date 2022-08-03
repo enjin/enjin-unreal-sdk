@@ -11,7 +11,7 @@ namespace Sdk
 /**
  * @brief The network hosts used by the Enjin Platform.
  */
-class ENJINSDK_API FEnjinHosts final
+class ENJINSDKRUNTIME_API FEnjinHosts final
 {
 public:
 	FEnjinHosts() = delete;

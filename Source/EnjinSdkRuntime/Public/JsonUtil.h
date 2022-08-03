@@ -28,7 +28,7 @@ namespace Util
 /**
  * @brief Utility class for JSON processing.
  */
-class ENJINSDK_API FJsonUtil final
+class ENJINSDKRUNTIME_API FJsonUtil final
 {
 public:
 	FJsonUtil() = delete;

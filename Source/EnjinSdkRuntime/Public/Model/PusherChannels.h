@@ -13,7 +13,7 @@ namespace Model
 /**
  * @brief Models Pusher channels used by the platform.
  */
-class ENJINSDK_API FPusherChannels final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FPusherChannels final : public Serialization::IDeserializable
 {
 public:
 	/**

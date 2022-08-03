@@ -14,7 +14,7 @@ namespace Model
 /**
  * @brief Models a smart contract used by the platform.
  */
-class ENJINSDK_API FContracts final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FContracts final : public Serialization::IDeserializable
 {
 public:
 	/**

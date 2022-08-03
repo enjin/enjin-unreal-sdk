@@ -14,7 +14,7 @@ namespace Project
 /**
  * @brief Request for bridging multiple indices of an NFT in a single transaction.
  */
-class ENJINSDK_API FBridgeAssets final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FBridgeAssets final : public GraphQl::IGraphQlRequest,
                                          public TTransactionRequestArguments<FBridgeAssets>
 {
 public:
@@ -67,7 +67,7 @@ private:
 
 // region TTransactionRequestArguments
 
-template ENJINSDK_API FBridgeAssets&
+template ENJINSDKRUNTIME_API FBridgeAssets&
 TTransactionRequestArguments<FBridgeAssets>::SetEthAddress(FString Address);
 
 // endregion TTransactionRequestArguments
@@ -77,46 +77,46 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Project::FBridgeAssets&
+template ENJINSDKRUNTIME_API Project::FBridgeAssets&
 TTransactionFragmentArguments<Project::FBridgeAssets>::SetTransactionAssetIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FBridgeAssets&
+template ENJINSDKRUNTIME_API Project::FBridgeAssets&
 TTransactionFragmentArguments<Project::FBridgeAssets>::SetWithAssetData();
 
-template ENJINSDK_API Project::FBridgeAssets&
+template ENJINSDKRUNTIME_API Project::FBridgeAssets&
 TTransactionFragmentArguments<Project::FBridgeAssets>::SetWithBlockchainData();
 
-template ENJINSDK_API Project::FBridgeAssets&
+template ENJINSDKRUNTIME_API Project::FBridgeAssets&
 TTransactionFragmentArguments<Project::FBridgeAssets>::SetWithEncodedData();
 
-template ENJINSDK_API Project::FBridgeAssets&
+template ENJINSDKRUNTIME_API Project::FBridgeAssets&
 TTransactionFragmentArguments<Project::FBridgeAssets>::SetWithError();
 
-template ENJINSDK_API Project::FBridgeAssets&
+template ENJINSDKRUNTIME_API Project::FBridgeAssets&
 TTransactionFragmentArguments<Project::FBridgeAssets>::SetWithLogEvent();
 
-template ENJINSDK_API Project::FBridgeAssets&
+template ENJINSDKRUNTIME_API Project::FBridgeAssets&
 TTransactionFragmentArguments<Project::FBridgeAssets>::SetWithMeta();
 
-template ENJINSDK_API Project::FBridgeAssets&
+template ENJINSDKRUNTIME_API Project::FBridgeAssets&
 TTransactionFragmentArguments<Project::FBridgeAssets>::SetWithNonce();
 
-template ENJINSDK_API Project::FBridgeAssets&
+template ENJINSDKRUNTIME_API Project::FBridgeAssets&
 TTransactionFragmentArguments<Project::FBridgeAssets>::SetWithReceipt();
 
-template ENJINSDK_API Project::FBridgeAssets&
+template ENJINSDKRUNTIME_API Project::FBridgeAssets&
 TTransactionFragmentArguments<Project::FBridgeAssets>::SetWithReceiptLogs();
 
-template ENJINSDK_API Project::FBridgeAssets&
+template ENJINSDKRUNTIME_API Project::FBridgeAssets&
 TTransactionFragmentArguments<Project::FBridgeAssets>::SetWithSignedTxs();
 
-template ENJINSDK_API Project::FBridgeAssets&
+template ENJINSDKRUNTIME_API Project::FBridgeAssets&
 TTransactionFragmentArguments<Project::FBridgeAssets>::SetWithState();
 
-template ENJINSDK_API Project::FBridgeAssets&
+template ENJINSDKRUNTIME_API Project::FBridgeAssets&
 TTransactionFragmentArguments<Project::FBridgeAssets>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Project::FBridgeAssets&
+template ENJINSDKRUNTIME_API Project::FBridgeAssets&
 TTransactionFragmentArguments<Project::FBridgeAssets>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

@@ -24,7 +24,7 @@ enum class EOperator
  * @param Value The enum value.
  * @return The serialized value.
  */
-ENJINSDK_API const TCHAR* ToString(const EOperator Value);
+ENJINSDKRUNTIME_API const TCHAR* ToString(const EOperator Value);
 }
 }
 }

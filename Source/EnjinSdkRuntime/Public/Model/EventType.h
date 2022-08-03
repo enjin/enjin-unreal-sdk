@@ -54,14 +54,14 @@ enum class EEventType
  * @param String The serialized string.
  * @return The event type.
  */
-ENJINSDK_API EEventType ToEventType(const FString& String);
+ENJINSDKRUNTIME_API EEventType ToEventType(const FString& String);
 
 /**
  * @brief Serializes the event type into a string.
  * @param Value The enum value.
  * @return The serialized value.
  */
-ENJINSDK_API const TCHAR* ToString(const EEventType Value);
+ENJINSDKRUNTIME_API const TCHAR* ToString(const EEventType Value);
 }
 }
 }

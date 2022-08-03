@@ -13,7 +13,7 @@ namespace Model
 /**
  * @brief Models a mint input for mint requests.
  */
-class ENJINSDK_API FMintInput final : public Serialization::ISerializable
+class ENJINSDKRUNTIME_API FMintInput final : public Serialization::ISerializable
 {
 public:
 	/**

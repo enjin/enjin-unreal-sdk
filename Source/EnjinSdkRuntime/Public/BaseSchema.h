@@ -17,7 +17,7 @@ namespace Sdk
 /**
  * @brief Base class for schemas with functionality to send GraphQL requests to the platform and process the responses.
  */
-class ENJINSDK_API FBaseSchema
+class ENJINSDKRUNTIME_API FBaseSchema
 {
 public:
 	FBaseSchema() = delete;

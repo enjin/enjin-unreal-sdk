@@ -28,14 +28,14 @@ enum class EAssetTransferable
  * @param String The serialized string.
  * @return The asset transferable.
  */
-ENJINSDK_API EAssetTransferable ToAssetTransferable(const FString& String);
+ENJINSDKRUNTIME_API EAssetTransferable ToAssetTransferable(const FString& String);
 
 /**
  * @brief Serializes the asset transferable into a string.
  * @param Value The enum value.
  * @return The serialized value.
  */
-ENJINSDK_API const TCHAR* ToString(const EAssetTransferable Value);
+ENJINSDKRUNTIME_API const TCHAR* ToString(const EAssetTransferable Value);
 }
 }
 }

@@ -13,7 +13,7 @@ namespace Project
 /**
  * @brief Request for invalidating the cached metadata of a asset on the platform.
  */
-class ENJINSDK_API FInvalidateAssetMetadata final : public GraphQl::IGraphQlRequest
+class ENJINSDKRUNTIME_API FInvalidateAssetMetadata final : public GraphQl::IGraphQlRequest
 {
 public:
 	/**

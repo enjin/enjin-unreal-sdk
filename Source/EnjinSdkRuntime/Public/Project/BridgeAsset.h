@@ -14,7 +14,7 @@ namespace Project
 /**
  * @brief Request for bridging an asset.
  */
-class ENJINSDK_API FBridgeAsset final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FBridgeAsset final : public GraphQl::IGraphQlRequest,
                                         public TTransactionRequestArguments<FBridgeAsset>
 {
 public:
@@ -75,7 +75,7 @@ private:
 
 // region TTransactionRequestArguments
 
-template ENJINSDK_API FBridgeAsset&
+template ENJINSDKRUNTIME_API FBridgeAsset&
 TTransactionRequestArguments<FBridgeAsset>::SetEthAddress(FString Address);
 
 // endregion TTransactionRequestArguments
@@ -85,46 +85,46 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Project::FBridgeAsset&
+template ENJINSDKRUNTIME_API Project::FBridgeAsset&
 TTransactionFragmentArguments<Project::FBridgeAsset>::SetTransactionAssetIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FBridgeAsset&
+template ENJINSDKRUNTIME_API Project::FBridgeAsset&
 TTransactionFragmentArguments<Project::FBridgeAsset>::SetWithAssetData();
 
-template ENJINSDK_API Project::FBridgeAsset&
+template ENJINSDKRUNTIME_API Project::FBridgeAsset&
 TTransactionFragmentArguments<Project::FBridgeAsset>::SetWithBlockchainData();
 
-template ENJINSDK_API Project::FBridgeAsset&
+template ENJINSDKRUNTIME_API Project::FBridgeAsset&
 TTransactionFragmentArguments<Project::FBridgeAsset>::SetWithEncodedData();
 
-template ENJINSDK_API Project::FBridgeAsset&
+template ENJINSDKRUNTIME_API Project::FBridgeAsset&
 TTransactionFragmentArguments<Project::FBridgeAsset>::SetWithError();
 
-template ENJINSDK_API Project::FBridgeAsset&
+template ENJINSDKRUNTIME_API Project::FBridgeAsset&
 TTransactionFragmentArguments<Project::FBridgeAsset>::SetWithLogEvent();
 
-template ENJINSDK_API Project::FBridgeAsset&
+template ENJINSDKRUNTIME_API Project::FBridgeAsset&
 TTransactionFragmentArguments<Project::FBridgeAsset>::SetWithMeta();
 
-template ENJINSDK_API Project::FBridgeAsset&
+template ENJINSDKRUNTIME_API Project::FBridgeAsset&
 TTransactionFragmentArguments<Project::FBridgeAsset>::SetWithNonce();
 
-template ENJINSDK_API Project::FBridgeAsset&
+template ENJINSDKRUNTIME_API Project::FBridgeAsset&
 TTransactionFragmentArguments<Project::FBridgeAsset>::SetWithReceipt();
 
-template ENJINSDK_API Project::FBridgeAsset&
+template ENJINSDKRUNTIME_API Project::FBridgeAsset&
 TTransactionFragmentArguments<Project::FBridgeAsset>::SetWithReceiptLogs();
 
-template ENJINSDK_API Project::FBridgeAsset&
+template ENJINSDKRUNTIME_API Project::FBridgeAsset&
 TTransactionFragmentArguments<Project::FBridgeAsset>::SetWithSignedTxs();
 
-template ENJINSDK_API Project::FBridgeAsset&
+template ENJINSDKRUNTIME_API Project::FBridgeAsset&
 TTransactionFragmentArguments<Project::FBridgeAsset>::SetWithState();
 
-template ENJINSDK_API Project::FBridgeAsset&
+template ENJINSDKRUNTIME_API Project::FBridgeAsset&
 TTransactionFragmentArguments<Project::FBridgeAsset>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Project::FBridgeAsset&
+template ENJINSDKRUNTIME_API Project::FBridgeAsset&
 TTransactionFragmentArguments<Project::FBridgeAsset>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

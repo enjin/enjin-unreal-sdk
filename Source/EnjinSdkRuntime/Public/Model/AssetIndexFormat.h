@@ -22,7 +22,7 @@ enum class EAssetIndexFormat
  * @param Value The enum value.
  * @return The serialized value.
  */
-ENJINSDK_API const TCHAR* ToString(const EAssetIndexFormat Value);
+ENJINSDKRUNTIME_API const TCHAR* ToString(const EAssetIndexFormat Value);
 }
 }
 }

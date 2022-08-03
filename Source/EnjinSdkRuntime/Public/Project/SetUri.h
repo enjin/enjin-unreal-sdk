@@ -14,7 +14,7 @@ namespace Project
 /**
  * @brief Request to set the metadata of an asset.
  */
-class ENJINSDK_API FSetUri final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FSetUri final : public GraphQl::IGraphQlRequest,
                                    public TTransactionRequestArguments<FSetUri>
 {
 public:
@@ -75,7 +75,7 @@ private:
 
 // region TTransactionRequestArguments
 
-template ENJINSDK_API FSetUri&
+template ENJINSDKRUNTIME_API FSetUri&
 TTransactionRequestArguments<FSetUri>::SetEthAddress(FString Address);
 
 // endregion TTransactionRequestArguments
@@ -85,46 +85,46 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Project::FSetUri&
+template ENJINSDKRUNTIME_API Project::FSetUri&
 TTransactionFragmentArguments<Project::FSetUri>::SetTransactionAssetIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FSetUri&
+template ENJINSDKRUNTIME_API Project::FSetUri&
 TTransactionFragmentArguments<Project::FSetUri>::SetWithAssetData();
 
-template ENJINSDK_API Project::FSetUri&
+template ENJINSDKRUNTIME_API Project::FSetUri&
 TTransactionFragmentArguments<Project::FSetUri>::SetWithBlockchainData();
 
-template ENJINSDK_API Project::FSetUri&
+template ENJINSDKRUNTIME_API Project::FSetUri&
 TTransactionFragmentArguments<Project::FSetUri>::SetWithEncodedData();
 
-template ENJINSDK_API Project::FSetUri&
+template ENJINSDKRUNTIME_API Project::FSetUri&
 TTransactionFragmentArguments<Project::FSetUri>::SetWithError();
 
-template ENJINSDK_API Project::FSetUri&
+template ENJINSDKRUNTIME_API Project::FSetUri&
 TTransactionFragmentArguments<Project::FSetUri>::SetWithLogEvent();
 
-template ENJINSDK_API Project::FSetUri&
+template ENJINSDKRUNTIME_API Project::FSetUri&
 TTransactionFragmentArguments<Project::FSetUri>::SetWithMeta();
 
-template ENJINSDK_API Project::FSetUri&
+template ENJINSDKRUNTIME_API Project::FSetUri&
 TTransactionFragmentArguments<Project::FSetUri>::SetWithNonce();
 
-template ENJINSDK_API Project::FSetUri&
+template ENJINSDKRUNTIME_API Project::FSetUri&
 TTransactionFragmentArguments<Project::FSetUri>::SetWithReceipt();
 
-template ENJINSDK_API Project::FSetUri&
+template ENJINSDKRUNTIME_API Project::FSetUri&
 TTransactionFragmentArguments<Project::FSetUri>::SetWithReceiptLogs();
 
-template ENJINSDK_API Project::FSetUri&
+template ENJINSDKRUNTIME_API Project::FSetUri&
 TTransactionFragmentArguments<Project::FSetUri>::SetWithSignedTxs();
 
-template ENJINSDK_API Project::FSetUri&
+template ENJINSDKRUNTIME_API Project::FSetUri&
 TTransactionFragmentArguments<Project::FSetUri>::SetWithState();
 
-template ENJINSDK_API Project::FSetUri&
+template ENJINSDKRUNTIME_API Project::FSetUri&
 TTransactionFragmentArguments<Project::FSetUri>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Project::FSetUri&
+template ENJINSDKRUNTIME_API Project::FSetUri&
 TTransactionFragmentArguments<Project::FSetUri>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

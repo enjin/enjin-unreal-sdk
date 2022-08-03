@@ -22,7 +22,7 @@ enum class ESortDirection
  * @param Value The enum value.
  * @return The serialized value.
  */
-ENJINSDK_API const TCHAR* ToString(const ESortDirection Value);
+ENJINSDKRUNTIME_API const TCHAR* ToString(const ESortDirection Value);
 }
 }
 }

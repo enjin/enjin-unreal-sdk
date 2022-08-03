@@ -14,7 +14,7 @@ namespace Project
 /**
  * @brief Class for sending requests in the project schema.
  */
-class ENJINSDK_API FProjectSchema : public IProjectSchema,
+class ENJINSDKRUNTIME_API FProjectSchema : public IProjectSchema,
                                     public Shared::FSharedSchema
 {
 public:

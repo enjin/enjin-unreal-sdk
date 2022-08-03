@@ -14,7 +14,7 @@ namespace GraphQl
 /**
  * @brief Base class for representing a GraphQL response from the platform.
  */
-class ENJINSDK_API IGraphQlResponse
+class ENJINSDKRUNTIME_API IGraphQlResponse
 {
 public:
 	/**

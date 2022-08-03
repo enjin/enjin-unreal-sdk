@@ -20,7 +20,7 @@ class FTransaction;
 /**
  * @brief Models a wallet on the platform.
  */
-class ENJINSDK_API FWallet final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FWallet final : public Serialization::IDeserializable
 {
 public:
 	/**

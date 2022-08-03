@@ -17,7 +17,7 @@ namespace Shared
 /**
  * @brief Request for getting assets on the platform.
  */
-class ENJINSDK_API FGetAssets final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FGetAssets final : public GraphQl::IGraphQlRequest,
                                       public TAssetFragmentArguments<FGetAssets>,
                                       public TPaginationArguments<FGetAssets>
 {
@@ -69,46 +69,46 @@ private:
 	TOptional<Model::FAssetSortInput> SortOpt;
 };
 
-template ENJINSDK_API FGetAssets&
+template ENJINSDKRUNTIME_API FGetAssets&
 TAssetFragmentArguments<FGetAssets>::SetAssetIdFormat(Model::EAssetIdFormat AssetIdFormat);
 
-template ENJINSDK_API FGetAssets&
+template ENJINSDKRUNTIME_API FGetAssets&
 TPaginationArguments<FGetAssets>::SetPagination(Model::FPaginationInput Pagination);
 
-template ENJINSDK_API FGetAssets&
+template ENJINSDKRUNTIME_API FGetAssets&
 TPaginationArguments<FGetAssets>::SetPagination(const int32 Page, const int32 Limit);
 
-template ENJINSDK_API FGetAssets&
+template ENJINSDKRUNTIME_API FGetAssets&
 TAssetFragmentArguments<FGetAssets>::SetWithAssetBlocks();
 
-template ENJINSDK_API FGetAssets&
+template ENJINSDKRUNTIME_API FGetAssets&
 TAssetFragmentArguments<FGetAssets>::SetWithAssetVariantMode();
 
-template ENJINSDK_API FGetAssets&
+template ENJINSDKRUNTIME_API FGetAssets&
 TAssetFragmentArguments<FGetAssets>::SetWithAssetVariants();
 
-template ENJINSDK_API FGetAssets&
+template ENJINSDKRUNTIME_API FGetAssets&
 TAssetFragmentArguments<FGetAssets>::SetWithConfigData();
 
-template ENJINSDK_API FGetAssets&
+template ENJINSDKRUNTIME_API FGetAssets&
 TAssetFragmentArguments<FGetAssets>::SetWithCreator();
 
-template ENJINSDK_API FGetAssets&
+template ENJINSDKRUNTIME_API FGetAssets&
 TAssetFragmentArguments<FGetAssets>::SetWithMeltDetails();
 
-template ENJINSDK_API FGetAssets&
+template ENJINSDKRUNTIME_API FGetAssets&
 TAssetFragmentArguments<FGetAssets>::SetWithMetadataUri();
 
-template ENJINSDK_API FGetAssets&
+template ENJINSDKRUNTIME_API FGetAssets&
 TAssetFragmentArguments<FGetAssets>::SetWithStateData();
 
-template ENJINSDK_API FGetAssets&
+template ENJINSDKRUNTIME_API FGetAssets&
 TAssetFragmentArguments<FGetAssets>::SetWithSupplyDetails();
 
-template ENJINSDK_API FGetAssets&
+template ENJINSDKRUNTIME_API FGetAssets&
 TAssetFragmentArguments<FGetAssets>::SetWithTransferSettings();
 
-template ENJINSDK_API FGetAssets&
+template ENJINSDKRUNTIME_API FGetAssets&
 TAssetFragmentArguments<FGetAssets>::SetWithVariantMetadata();
 }
 }

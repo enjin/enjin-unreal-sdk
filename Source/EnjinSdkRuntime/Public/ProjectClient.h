@@ -15,7 +15,7 @@ namespace Sdk
 /**
  * @brief Platform client based on the project schema.
  */
-class ENJINSDK_API FProjectClient final : public IClient,
+class ENJINSDKRUNTIME_API FProjectClient final : public IClient,
                                           public Project::FProjectSchema
 {
 public:
@@ -86,7 +86,7 @@ public:
 	/**
 	 * @brief Builder class for @link FProjectClient @endlink.
 	 */
-	class ENJINSDK_API FProjectClientBuilder final
+	class ENJINSDKRUNTIME_API FProjectClientBuilder final
 	{
 	public:
 		/**

@@ -17,7 +17,7 @@ namespace Shared
 /**
  * @brief Request for getting transactions on the platform.
  */
-class ENJINSDK_API FGetTransactions final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FGetTransactions final : public GraphQl::IGraphQlRequest,
                                             public TTransactionFragmentArguments<FGetTransactions>,
                                             public TPaginationArguments<FGetTransactions>
 {
@@ -71,56 +71,56 @@ private:
 
 // region TPaginationArguments
 
-template ENJINSDK_API FGetTransactions&
+template ENJINSDKRUNTIME_API FGetTransactions&
 TPaginationArguments<FGetTransactions>::SetPagination(Model::FPaginationInput Pagination);
 
-template ENJINSDK_API FGetTransactions&
+template ENJINSDKRUNTIME_API FGetTransactions&
 TPaginationArguments<FGetTransactions>::SetPagination(const int32 Page, const int32 Limit);
 
 // endregion TPaginationArguments
 
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API FGetTransactions&
+template ENJINSDKRUNTIME_API FGetTransactions&
 TTransactionFragmentArguments<FGetTransactions>::SetTransactionAssetIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API FGetTransactions&
+template ENJINSDKRUNTIME_API FGetTransactions&
 TTransactionFragmentArguments<FGetTransactions>::SetWithAssetData();
 
-template ENJINSDK_API FGetTransactions&
+template ENJINSDKRUNTIME_API FGetTransactions&
 TTransactionFragmentArguments<FGetTransactions>::SetWithBlockchainData();
 
-template ENJINSDK_API FGetTransactions&
+template ENJINSDKRUNTIME_API FGetTransactions&
 TTransactionFragmentArguments<FGetTransactions>::SetWithEncodedData();
 
-template ENJINSDK_API FGetTransactions&
+template ENJINSDKRUNTIME_API FGetTransactions&
 TTransactionFragmentArguments<FGetTransactions>::SetWithError();
 
-template ENJINSDK_API FGetTransactions&
+template ENJINSDKRUNTIME_API FGetTransactions&
 TTransactionFragmentArguments<FGetTransactions>::SetWithLogEvent();
 
-template ENJINSDK_API FGetTransactions&
+template ENJINSDKRUNTIME_API FGetTransactions&
 TTransactionFragmentArguments<FGetTransactions>::SetWithMeta();
 
-template ENJINSDK_API FGetTransactions&
+template ENJINSDKRUNTIME_API FGetTransactions&
 TTransactionFragmentArguments<FGetTransactions>::SetWithNonce();
 
-template ENJINSDK_API FGetTransactions&
+template ENJINSDKRUNTIME_API FGetTransactions&
 TTransactionFragmentArguments<FGetTransactions>::SetWithReceipt();
 
-template ENJINSDK_API FGetTransactions&
+template ENJINSDKRUNTIME_API FGetTransactions&
 TTransactionFragmentArguments<FGetTransactions>::SetWithReceiptLogs();
 
-template ENJINSDK_API FGetTransactions&
+template ENJINSDKRUNTIME_API FGetTransactions&
 TTransactionFragmentArguments<FGetTransactions>::SetWithSignedTxs();
 
-template ENJINSDK_API FGetTransactions&
+template ENJINSDKRUNTIME_API FGetTransactions&
 TTransactionFragmentArguments<FGetTransactions>::SetWithState();
 
-template ENJINSDK_API FGetTransactions&
+template ENJINSDKRUNTIME_API FGetTransactions&
 TTransactionFragmentArguments<FGetTransactions>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API FGetTransactions&
+template ENJINSDKRUNTIME_API FGetTransactions&
 TTransactionFragmentArguments<FGetTransactions>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

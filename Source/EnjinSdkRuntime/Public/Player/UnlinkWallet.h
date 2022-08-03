@@ -13,7 +13,7 @@ namespace Player
 /**
  * @brief Request for unlink the player's wallet.
  */
-class ENJINSDK_API FUnlinkWallet final : public GraphQl::IGraphQlRequest
+class ENJINSDKRUNTIME_API FUnlinkWallet final : public GraphQl::IGraphQlRequest
 {
 public:
 	/**

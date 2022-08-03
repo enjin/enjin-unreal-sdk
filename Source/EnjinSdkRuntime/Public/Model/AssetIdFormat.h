@@ -23,7 +23,7 @@ enum class EAssetIdFormat
  * @param Value The enum value.
  * @return The serialized value.
  */
-ENJINSDK_API const TCHAR* ToString(const EAssetIdFormat Value);
+ENJINSDKRUNTIME_API const TCHAR* ToString(const EAssetIdFormat Value);
 }
 }
 }

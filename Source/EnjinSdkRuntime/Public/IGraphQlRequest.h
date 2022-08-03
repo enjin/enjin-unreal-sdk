@@ -13,7 +13,7 @@ namespace GraphQl
 /**
  * @brief Base class for representing a GraphQL request to the platform.
  */
-class ENJINSDK_API IGraphQlRequest : public Serialization::ISerializable
+class ENJINSDKRUNTIME_API IGraphQlRequest : public Serialization::ISerializable
 {
 public:
 	IGraphQlRequest() = delete;

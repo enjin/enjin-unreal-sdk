@@ -13,7 +13,7 @@ namespace Model
 /**
  * @brief Models the supply models used by the platform.
  */
-class ENJINSDK_API FSupplyModels final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FSupplyModels final : public Serialization::IDeserializable
 {
 public:
 	/**

@@ -15,7 +15,7 @@ namespace Project
 /**
  * @brief Request for setting an asset's whitelist.
  */
-class ENJINSDK_API FSetWhitelisted final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FSetWhitelisted final : public GraphQl::IGraphQlRequest,
                                            public TTransactionRequestArguments<FSetWhitelisted>
 {
 public:
@@ -92,7 +92,7 @@ private:
 
 // region TTransactionRequestArguments
 
-template ENJINSDK_API FSetWhitelisted&
+template ENJINSDKRUNTIME_API FSetWhitelisted&
 TTransactionRequestArguments<FSetWhitelisted>::SetEthAddress(FString Address);
 
 // endregion TTransactionRequestArguments
@@ -102,47 +102,47 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Project::FSetWhitelisted&
+template ENJINSDKRUNTIME_API Project::FSetWhitelisted&
 TTransactionFragmentArguments<Project::FSetWhitelisted>::SetTransactionAssetIdFormat(
 	const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FSetWhitelisted&
+template ENJINSDKRUNTIME_API Project::FSetWhitelisted&
 TTransactionFragmentArguments<Project::FSetWhitelisted>::SetWithAssetData();
 
-template ENJINSDK_API Project::FSetWhitelisted&
+template ENJINSDKRUNTIME_API Project::FSetWhitelisted&
 TTransactionFragmentArguments<Project::FSetWhitelisted>::SetWithBlockchainData();
 
-template ENJINSDK_API Project::FSetWhitelisted&
+template ENJINSDKRUNTIME_API Project::FSetWhitelisted&
 TTransactionFragmentArguments<Project::FSetWhitelisted>::SetWithEncodedData();
 
-template ENJINSDK_API Project::FSetWhitelisted&
+template ENJINSDKRUNTIME_API Project::FSetWhitelisted&
 TTransactionFragmentArguments<Project::FSetWhitelisted>::SetWithError();
 
-template ENJINSDK_API Project::FSetWhitelisted&
+template ENJINSDKRUNTIME_API Project::FSetWhitelisted&
 TTransactionFragmentArguments<Project::FSetWhitelisted>::SetWithLogEvent();
 
-template ENJINSDK_API Project::FSetWhitelisted&
+template ENJINSDKRUNTIME_API Project::FSetWhitelisted&
 TTransactionFragmentArguments<Project::FSetWhitelisted>::SetWithMeta();
 
-template ENJINSDK_API Project::FSetWhitelisted&
+template ENJINSDKRUNTIME_API Project::FSetWhitelisted&
 TTransactionFragmentArguments<Project::FSetWhitelisted>::SetWithNonce();
 
-template ENJINSDK_API Project::FSetWhitelisted&
+template ENJINSDKRUNTIME_API Project::FSetWhitelisted&
 TTransactionFragmentArguments<Project::FSetWhitelisted>::SetWithReceipt();
 
-template ENJINSDK_API Project::FSetWhitelisted&
+template ENJINSDKRUNTIME_API Project::FSetWhitelisted&
 TTransactionFragmentArguments<Project::FSetWhitelisted>::SetWithReceiptLogs();
 
-template ENJINSDK_API Project::FSetWhitelisted&
+template ENJINSDKRUNTIME_API Project::FSetWhitelisted&
 TTransactionFragmentArguments<Project::FSetWhitelisted>::SetWithSignedTxs();
 
-template ENJINSDK_API Project::FSetWhitelisted&
+template ENJINSDKRUNTIME_API Project::FSetWhitelisted&
 TTransactionFragmentArguments<Project::FSetWhitelisted>::SetWithState();
 
-template ENJINSDK_API Project::FSetWhitelisted&
+template ENJINSDKRUNTIME_API Project::FSetWhitelisted&
 TTransactionFragmentArguments<Project::FSetWhitelisted>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Project::FSetWhitelisted&
+template ENJINSDKRUNTIME_API Project::FSetWhitelisted&
 TTransactionFragmentArguments<Project::FSetWhitelisted>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

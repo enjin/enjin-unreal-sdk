@@ -15,7 +15,7 @@ namespace Project
 /**
  * @brief Request for setting if an asset may be transferred.
  */
-class ENJINSDK_API FSetTransferable final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FSetTransferable final : public GraphQl::IGraphQlRequest,
                                             public TTransactionRequestArguments<FSetTransferable>
 {
 public:
@@ -76,7 +76,7 @@ private:
 
 // region TTransactionRequestArguments
 
-template ENJINSDK_API FSetTransferable&
+template ENJINSDKRUNTIME_API FSetTransferable&
 TTransactionRequestArguments<FSetTransferable>::SetEthAddress(FString Address);
 
 // endregion TTransactionRequestArguments
@@ -86,47 +86,47 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Project::FSetTransferable&
+template ENJINSDKRUNTIME_API Project::FSetTransferable&
 TTransactionFragmentArguments<Project::FSetTransferable>::SetTransactionAssetIdFormat(
 	const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FSetTransferable&
+template ENJINSDKRUNTIME_API Project::FSetTransferable&
 TTransactionFragmentArguments<Project::FSetTransferable>::SetWithAssetData();
 
-template ENJINSDK_API Project::FSetTransferable&
+template ENJINSDKRUNTIME_API Project::FSetTransferable&
 TTransactionFragmentArguments<Project::FSetTransferable>::SetWithBlockchainData();
 
-template ENJINSDK_API Project::FSetTransferable&
+template ENJINSDKRUNTIME_API Project::FSetTransferable&
 TTransactionFragmentArguments<Project::FSetTransferable>::SetWithEncodedData();
 
-template ENJINSDK_API Project::FSetTransferable&
+template ENJINSDKRUNTIME_API Project::FSetTransferable&
 TTransactionFragmentArguments<Project::FSetTransferable>::SetWithError();
 
-template ENJINSDK_API Project::FSetTransferable&
+template ENJINSDKRUNTIME_API Project::FSetTransferable&
 TTransactionFragmentArguments<Project::FSetTransferable>::SetWithLogEvent();
 
-template ENJINSDK_API Project::FSetTransferable&
+template ENJINSDKRUNTIME_API Project::FSetTransferable&
 TTransactionFragmentArguments<Project::FSetTransferable>::SetWithMeta();
 
-template ENJINSDK_API Project::FSetTransferable&
+template ENJINSDKRUNTIME_API Project::FSetTransferable&
 TTransactionFragmentArguments<Project::FSetTransferable>::SetWithNonce();
 
-template ENJINSDK_API Project::FSetTransferable&
+template ENJINSDKRUNTIME_API Project::FSetTransferable&
 TTransactionFragmentArguments<Project::FSetTransferable>::SetWithReceipt();
 
-template ENJINSDK_API Project::FSetTransferable&
+template ENJINSDKRUNTIME_API Project::FSetTransferable&
 TTransactionFragmentArguments<Project::FSetTransferable>::SetWithReceiptLogs();
 
-template ENJINSDK_API Project::FSetTransferable&
+template ENJINSDKRUNTIME_API Project::FSetTransferable&
 TTransactionFragmentArguments<Project::FSetTransferable>::SetWithSignedTxs();
 
-template ENJINSDK_API Project::FSetTransferable&
+template ENJINSDKRUNTIME_API Project::FSetTransferable&
 TTransactionFragmentArguments<Project::FSetTransferable>::SetWithState();
 
-template ENJINSDK_API Project::FSetTransferable&
+template ENJINSDKRUNTIME_API Project::FSetTransferable&
 TTransactionFragmentArguments<Project::FSetTransferable>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Project::FSetTransferable&
+template ENJINSDKRUNTIME_API Project::FSetTransferable&
 TTransactionFragmentArguments<Project::FSetTransferable>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

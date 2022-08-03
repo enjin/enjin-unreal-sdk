@@ -14,7 +14,7 @@ namespace Player
 /**
  * @brief Request for approving the crypto items contract for to spend the maximum amount of ENJ.
  */
-class ENJINSDK_API FApproveMaxEnj final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FApproveMaxEnj final : public GraphQl::IGraphQlRequest,
                                           public Shared::TTransactionFragmentArguments<FApproveMaxEnj>
 {
 public:
@@ -52,46 +52,46 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Player::FApproveMaxEnj&
+template ENJINSDKRUNTIME_API Player::FApproveMaxEnj&
 TTransactionFragmentArguments<Player::FApproveMaxEnj>::SetTransactionAssetIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Player::FApproveMaxEnj&
+template ENJINSDKRUNTIME_API Player::FApproveMaxEnj&
 TTransactionFragmentArguments<Player::FApproveMaxEnj>::SetWithAssetData();
 
-template ENJINSDK_API Player::FApproveMaxEnj&
+template ENJINSDKRUNTIME_API Player::FApproveMaxEnj&
 TTransactionFragmentArguments<Player::FApproveMaxEnj>::SetWithBlockchainData();
 
-template ENJINSDK_API Player::FApproveMaxEnj&
+template ENJINSDKRUNTIME_API Player::FApproveMaxEnj&
 TTransactionFragmentArguments<Player::FApproveMaxEnj>::SetWithEncodedData();
 
-template ENJINSDK_API Player::FApproveMaxEnj&
+template ENJINSDKRUNTIME_API Player::FApproveMaxEnj&
 TTransactionFragmentArguments<Player::FApproveMaxEnj>::SetWithError();
 
-template ENJINSDK_API Player::FApproveMaxEnj&
+template ENJINSDKRUNTIME_API Player::FApproveMaxEnj&
 TTransactionFragmentArguments<Player::FApproveMaxEnj>::SetWithLogEvent();
 
-template ENJINSDK_API Player::FApproveMaxEnj&
+template ENJINSDKRUNTIME_API Player::FApproveMaxEnj&
 TTransactionFragmentArguments<Player::FApproveMaxEnj>::SetWithMeta();
 
-template ENJINSDK_API Player::FApproveMaxEnj&
+template ENJINSDKRUNTIME_API Player::FApproveMaxEnj&
 TTransactionFragmentArguments<Player::FApproveMaxEnj>::SetWithNonce();
 
-template ENJINSDK_API Player::FApproveMaxEnj&
+template ENJINSDKRUNTIME_API Player::FApproveMaxEnj&
 TTransactionFragmentArguments<Player::FApproveMaxEnj>::SetWithReceipt();
 
-template ENJINSDK_API Player::FApproveMaxEnj&
+template ENJINSDKRUNTIME_API Player::FApproveMaxEnj&
 TTransactionFragmentArguments<Player::FApproveMaxEnj>::SetWithReceiptLogs();
 
-template ENJINSDK_API Player::FApproveMaxEnj&
+template ENJINSDKRUNTIME_API Player::FApproveMaxEnj&
 TTransactionFragmentArguments<Player::FApproveMaxEnj>::SetWithSignedTxs();
 
-template ENJINSDK_API Player::FApproveMaxEnj&
+template ENJINSDKRUNTIME_API Player::FApproveMaxEnj&
 TTransactionFragmentArguments<Player::FApproveMaxEnj>::SetWithState();
 
-template ENJINSDK_API Player::FApproveMaxEnj&
+template ENJINSDKRUNTIME_API Player::FApproveMaxEnj&
 TTransactionFragmentArguments<Player::FApproveMaxEnj>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Player::FApproveMaxEnj&
+template ENJINSDKRUNTIME_API Player::FApproveMaxEnj&
 TTransactionFragmentArguments<Player::FApproveMaxEnj>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

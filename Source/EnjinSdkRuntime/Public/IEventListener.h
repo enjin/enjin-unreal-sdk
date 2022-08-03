@@ -13,7 +13,7 @@ namespace Event
 /**
  * @brief Event listener interface for notifications from the platform.
  */
-class ENJINSDK_API IEventListener
+class ENJINSDKRUNTIME_API IEventListener
 {
 public:
 	/**

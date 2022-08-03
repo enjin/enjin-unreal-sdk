@@ -33,14 +33,14 @@ enum class ETransactionState
  * @param Value The enum value.
  * @return The serialized value.
  */
-ENJINSDK_API const TCHAR* ToString(const ETransactionState Value);
+ENJINSDKRUNTIME_API const TCHAR* ToString(const ETransactionState Value);
 
 /**
  * @brief Deserializes the transaction state from a string.
  * @param String The serialized string.
  * @return The transaction state.
  */
-ENJINSDK_API ETransactionState ToTransactionState(const FString& String);
+ENJINSDKRUNTIME_API ETransactionState ToTransactionState(const FString& String);
 }
 }
 }

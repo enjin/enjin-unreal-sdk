@@ -29,7 +29,7 @@ enum class EAssetVariantMode
  * @param String The serialized string.
  * @return The asset variant mode.
  */
-ENJINSDK_API EAssetVariantMode ToAssetVariantMode(const FString& String);
+ENJINSDKRUNTIME_API EAssetVariantMode ToAssetVariantMode(const FString& String);
 }
 }
 }

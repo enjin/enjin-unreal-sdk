@@ -15,7 +15,7 @@ namespace Project
 /**
  * @brief Request for melting assets.
  */
-class ENJINSDK_API FMeltAsset final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FMeltAsset final : public GraphQl::IGraphQlRequest,
                                       public TTransactionRequestArguments<FMeltAsset>
 {
 public:
@@ -60,7 +60,7 @@ private:
 
 // region TTransactionRequestArguments
 
-template ENJINSDK_API FMeltAsset&
+template ENJINSDKRUNTIME_API FMeltAsset&
 TTransactionRequestArguments<FMeltAsset>::SetEthAddress(FString Address);
 
 // endregion TTransactionRequestArguments
@@ -70,46 +70,46 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Project::FMeltAsset&
+template ENJINSDKRUNTIME_API Project::FMeltAsset&
 TTransactionFragmentArguments<Project::FMeltAsset>::SetTransactionAssetIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FMeltAsset&
+template ENJINSDKRUNTIME_API Project::FMeltAsset&
 TTransactionFragmentArguments<Project::FMeltAsset>::SetWithAssetData();
 
-template ENJINSDK_API Project::FMeltAsset&
+template ENJINSDKRUNTIME_API Project::FMeltAsset&
 TTransactionFragmentArguments<Project::FMeltAsset>::SetWithBlockchainData();
 
-template ENJINSDK_API Project::FMeltAsset&
+template ENJINSDKRUNTIME_API Project::FMeltAsset&
 TTransactionFragmentArguments<Project::FMeltAsset>::SetWithEncodedData();
 
-template ENJINSDK_API Project::FMeltAsset&
+template ENJINSDKRUNTIME_API Project::FMeltAsset&
 TTransactionFragmentArguments<Project::FMeltAsset>::SetWithError();
 
-template ENJINSDK_API Project::FMeltAsset&
+template ENJINSDKRUNTIME_API Project::FMeltAsset&
 TTransactionFragmentArguments<Project::FMeltAsset>::SetWithLogEvent();
 
-template ENJINSDK_API Project::FMeltAsset&
+template ENJINSDKRUNTIME_API Project::FMeltAsset&
 TTransactionFragmentArguments<Project::FMeltAsset>::SetWithMeta();
 
-template ENJINSDK_API Project::FMeltAsset&
+template ENJINSDKRUNTIME_API Project::FMeltAsset&
 TTransactionFragmentArguments<Project::FMeltAsset>::SetWithNonce();
 
-template ENJINSDK_API Project::FMeltAsset&
+template ENJINSDKRUNTIME_API Project::FMeltAsset&
 TTransactionFragmentArguments<Project::FMeltAsset>::SetWithReceipt();
 
-template ENJINSDK_API Project::FMeltAsset&
+template ENJINSDKRUNTIME_API Project::FMeltAsset&
 TTransactionFragmentArguments<Project::FMeltAsset>::SetWithReceiptLogs();
 
-template ENJINSDK_API Project::FMeltAsset&
+template ENJINSDKRUNTIME_API Project::FMeltAsset&
 TTransactionFragmentArguments<Project::FMeltAsset>::SetWithSignedTxs();
 
-template ENJINSDK_API Project::FMeltAsset&
+template ENJINSDKRUNTIME_API Project::FMeltAsset&
 TTransactionFragmentArguments<Project::FMeltAsset>::SetWithState();
 
-template ENJINSDK_API Project::FMeltAsset&
+template ENJINSDKRUNTIME_API Project::FMeltAsset&
 TTransactionFragmentArguments<Project::FMeltAsset>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Project::FMeltAsset&
+template ENJINSDKRUNTIME_API Project::FMeltAsset&
 TTransactionFragmentArguments<Project::FMeltAsset>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

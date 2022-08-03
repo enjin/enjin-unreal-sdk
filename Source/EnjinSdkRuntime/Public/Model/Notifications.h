@@ -14,7 +14,7 @@ namespace Model
 /**
  * @brief Models the notification drivers and settings for the platform.
  */
-class ENJINSDK_API FNotifications final : Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FNotifications final : Serialization::IDeserializable
 {
 public:
 	/**

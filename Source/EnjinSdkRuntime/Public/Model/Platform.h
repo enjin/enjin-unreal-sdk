@@ -15,7 +15,7 @@ namespace Model
 /**
  * @brief Models data about the platform.
  */
-class ENJINSDK_API FPlatform final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FPlatform final : public Serialization::IDeserializable
 {
 public:
 	/**

@@ -13,7 +13,7 @@ namespace Model
 /**
  * @brief Models a filter input for player queries.
  */
-class ENJINSDK_API FPlayerFilter final : public Serialization::ISerializable
+class ENJINSDKRUNTIME_API FPlayerFilter final : public Serialization::ISerializable
 {
 public:
 	/**

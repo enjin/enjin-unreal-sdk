@@ -12,7 +12,7 @@ namespace Sdk
 /**
  * @brief Middleware for communicating with the platform.
  */
-class ENJINSDK_API FClientMiddleware final
+class ENJINSDKRUNTIME_API FClientMiddleware final
 {
 public:
 	FClientMiddleware() = delete;

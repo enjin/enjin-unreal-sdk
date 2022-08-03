@@ -15,7 +15,7 @@ namespace Project
 /**
  * @brief Request for sending one or more assets in a single transaction.
  */
-class ENJINSDK_API FAdvancedSendAsset final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FAdvancedSendAsset final : public GraphQl::IGraphQlRequest,
                                               public TTransactionRequestArguments<FAdvancedSendAsset>
 {
 public:
@@ -68,7 +68,7 @@ private:
 
 // region TTransactionRequestArguments
 
-template ENJINSDK_API FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API FAdvancedSendAsset&
 TTransactionRequestArguments<FAdvancedSendAsset>::SetEthAddress(FString Address);
 
 // endregion TTransactionRequestArguments
@@ -78,47 +78,47 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Project::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Project::FAdvancedSendAsset&
 TTransactionFragmentArguments<Project::FAdvancedSendAsset>::SetTransactionAssetIdFormat(
 	const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Project::FAdvancedSendAsset&
 TTransactionFragmentArguments<Project::FAdvancedSendAsset>::SetWithAssetData();
 
-template ENJINSDK_API Project::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Project::FAdvancedSendAsset&
 TTransactionFragmentArguments<Project::FAdvancedSendAsset>::SetWithBlockchainData();
 
-template ENJINSDK_API Project::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Project::FAdvancedSendAsset&
 TTransactionFragmentArguments<Project::FAdvancedSendAsset>::SetWithEncodedData();
 
-template ENJINSDK_API Project::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Project::FAdvancedSendAsset&
 TTransactionFragmentArguments<Project::FAdvancedSendAsset>::SetWithError();
 
-template ENJINSDK_API Project::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Project::FAdvancedSendAsset&
 TTransactionFragmentArguments<Project::FAdvancedSendAsset>::SetWithLogEvent();
 
-template ENJINSDK_API Project::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Project::FAdvancedSendAsset&
 TTransactionFragmentArguments<Project::FAdvancedSendAsset>::SetWithMeta();
 
-template ENJINSDK_API Project::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Project::FAdvancedSendAsset&
 TTransactionFragmentArguments<Project::FAdvancedSendAsset>::SetWithNonce();
 
-template ENJINSDK_API Project::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Project::FAdvancedSendAsset&
 TTransactionFragmentArguments<Project::FAdvancedSendAsset>::SetWithReceipt();
 
-template ENJINSDK_API Project::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Project::FAdvancedSendAsset&
 TTransactionFragmentArguments<Project::FAdvancedSendAsset>::SetWithReceiptLogs();
 
-template ENJINSDK_API Project::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Project::FAdvancedSendAsset&
 TTransactionFragmentArguments<Project::FAdvancedSendAsset>::SetWithSignedTxs();
 
-template ENJINSDK_API Project::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Project::FAdvancedSendAsset&
 TTransactionFragmentArguments<Project::FAdvancedSendAsset>::SetWithState();
 
-template ENJINSDK_API Project::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Project::FAdvancedSendAsset&
 TTransactionFragmentArguments<Project::FAdvancedSendAsset>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Project::FAdvancedSendAsset&
+template ENJINSDKRUNTIME_API Project::FAdvancedSendAsset&
 TTransactionFragmentArguments<Project::FAdvancedSendAsset>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

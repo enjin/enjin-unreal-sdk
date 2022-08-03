@@ -16,7 +16,7 @@ namespace Shared
 /**
  * @brief Request for getting balances on the platform.
  */
-class ENJINSDK_API FGetBalances final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FGetBalances final : public GraphQl::IGraphQlRequest,
                                         public TBalanceFragmentArguments<FGetBalances>,
                                         public TPaginationArguments<FGetBalances>
 {
@@ -60,22 +60,22 @@ private:
 	TOptional<Model::FBalanceFilter> FilterOpt;
 };
 
-template ENJINSDK_API FGetBalances&
+template ENJINSDKRUNTIME_API FGetBalances&
 TBalanceFragmentArguments<FGetBalances>::SetBalIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API FGetBalances&
+template ENJINSDKRUNTIME_API FGetBalances&
 TBalanceFragmentArguments<FGetBalances>::SetBalIndexFormat(const Model::EAssetIndexFormat Format);
 
-template ENJINSDK_API FGetBalances&
+template ENJINSDKRUNTIME_API FGetBalances&
 TPaginationArguments<FGetBalances>::SetPagination(Model::FPaginationInput Pagination);
 
-template ENJINSDK_API FGetBalances&
+template ENJINSDKRUNTIME_API FGetBalances&
 TPaginationArguments<FGetBalances>::SetPagination(const int32 Page, const int32 Limit);
 
-template ENJINSDK_API FGetBalances&
+template ENJINSDKRUNTIME_API FGetBalances&
 TBalanceFragmentArguments<FGetBalances>::SetWithBalProjectUuid();
 
-template ENJINSDK_API FGetBalances&
+template ENJINSDKRUNTIME_API FGetBalances&
 TBalanceFragmentArguments<FGetBalances>::SetWithBalWalletAddress();
 }
 }

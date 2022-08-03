@@ -13,7 +13,7 @@ namespace Model
 /**
  * @brief Models a trade input for trade requests.
  */
-class ENJINSDK_API FTradeInput final : public Serialization::ISerializable
+class ENJINSDKRUNTIME_API FTradeInput final : public Serialization::ISerializable
 {
 public:
 	/**

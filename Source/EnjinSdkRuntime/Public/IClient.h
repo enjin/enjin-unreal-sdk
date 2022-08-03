@@ -9,7 +9,7 @@ namespace Sdk
 /**
  * @brief Interface for platform clients.
  */
-class ENJINSDK_API IClient
+class ENJINSDKRUNTIME_API IClient
 {
 public:
 	/**

@@ -51,7 +51,7 @@ namespace Project
 /**
  * @brief Interface for project schema.
  */
-class ENJINSDK_API IProjectSchema
+class ENJINSDKRUNTIME_API IProjectSchema
 {
 public:
 	/**

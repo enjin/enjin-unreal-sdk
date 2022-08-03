@@ -13,7 +13,7 @@ namespace Util
 /**
  * @brief Logger interface to be implemented for use within the SDK.
  */
-class ENJINSDK_API ILogger
+class ENJINSDKRUNTIME_API ILogger
 {
 public:
 	/**

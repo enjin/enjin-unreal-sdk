@@ -18,7 +18,7 @@ namespace Shared
  * @tparam T The type of the implementing class.
  */
 template <class T>
-class ENJINSDK_API TTransactionFragmentArguments : public Serialization::ISerializable
+class ENJINSDKRUNTIME_API TTransactionFragmentArguments : public Serialization::ISerializable
 {
 public:
 	/**

@@ -14,7 +14,7 @@ namespace Player
 /**
  * @brief Request for allowing an operator complete control of all assets owned by the caller.
  */
-class ENJINSDK_API FSetApprovalForAll final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FSetApprovalForAll final : public GraphQl::IGraphQlRequest,
                                               public Shared::TTransactionFragmentArguments<FSetApprovalForAll>
 {
 public:
@@ -70,47 +70,47 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Player::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Player::FSetApprovalForAll&
 TTransactionFragmentArguments<Player::FSetApprovalForAll>::SetTransactionAssetIdFormat(
 	const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Player::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Player::FSetApprovalForAll&
 TTransactionFragmentArguments<Player::FSetApprovalForAll>::SetWithAssetData();
 
-template ENJINSDK_API Player::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Player::FSetApprovalForAll&
 TTransactionFragmentArguments<Player::FSetApprovalForAll>::SetWithBlockchainData();
 
-template ENJINSDK_API Player::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Player::FSetApprovalForAll&
 TTransactionFragmentArguments<Player::FSetApprovalForAll>::SetWithEncodedData();
 
-template ENJINSDK_API Player::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Player::FSetApprovalForAll&
 TTransactionFragmentArguments<Player::FSetApprovalForAll>::SetWithError();
 
-template ENJINSDK_API Player::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Player::FSetApprovalForAll&
 TTransactionFragmentArguments<Player::FSetApprovalForAll>::SetWithLogEvent();
 
-template ENJINSDK_API Player::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Player::FSetApprovalForAll&
 TTransactionFragmentArguments<Player::FSetApprovalForAll>::SetWithMeta();
 
-template ENJINSDK_API Player::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Player::FSetApprovalForAll&
 TTransactionFragmentArguments<Player::FSetApprovalForAll>::SetWithNonce();
 
-template ENJINSDK_API Player::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Player::FSetApprovalForAll&
 TTransactionFragmentArguments<Player::FSetApprovalForAll>::SetWithReceipt();
 
-template ENJINSDK_API Player::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Player::FSetApprovalForAll&
 TTransactionFragmentArguments<Player::FSetApprovalForAll>::SetWithReceiptLogs();
 
-template ENJINSDK_API Player::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Player::FSetApprovalForAll&
 TTransactionFragmentArguments<Player::FSetApprovalForAll>::SetWithSignedTxs();
 
-template ENJINSDK_API Player::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Player::FSetApprovalForAll&
 TTransactionFragmentArguments<Player::FSetApprovalForAll>::SetWithState();
 
-template ENJINSDK_API Player::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Player::FSetApprovalForAll&
 TTransactionFragmentArguments<Player::FSetApprovalForAll>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Player::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Player::FSetApprovalForAll&
 TTransactionFragmentArguments<Player::FSetApprovalForAll>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

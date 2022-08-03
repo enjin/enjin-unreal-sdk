@@ -14,7 +14,7 @@ namespace Model
 /**
  * @brief Models input for the transfer fee settings used in GraphQL requests.
  */
-class ENJINSDK_API FAssetTransferFeeSettingsInput final : public Serialization::ISerializable
+class ENJINSDKRUNTIME_API FAssetTransferFeeSettingsInput final : public Serialization::ISerializable
 {
 public:
 	/**

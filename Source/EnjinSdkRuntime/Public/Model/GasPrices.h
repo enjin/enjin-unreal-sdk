@@ -13,7 +13,7 @@ namespace Model
 /**
  * @brief Models gas prices on the platform.
  */
-class ENJINSDK_API FGasPrices final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FGasPrices final : public Serialization::IDeserializable
 {
 public:
 	/**

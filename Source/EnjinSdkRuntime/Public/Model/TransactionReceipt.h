@@ -14,7 +14,7 @@ namespace Model
 /**
  * @brief Models a receipt for a blockchain transaction.
  */
-class ENJINSDK_API FTransactionReceipt final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FTransactionReceipt final : public Serialization::IDeserializable
 {
 public:
 	/**

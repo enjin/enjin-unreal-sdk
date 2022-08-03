@@ -14,7 +14,7 @@ namespace Player
 /**
  * @brief Request for resetting the crypto items contract approval for ENJ.
  */
-class ENJINSDK_API FResetEnjApproval final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FResetEnjApproval final : public GraphQl::IGraphQlRequest,
                                              public Shared::TTransactionFragmentArguments<FResetEnjApproval>
 {
 public:
@@ -52,47 +52,47 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Player::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Player::FResetEnjApproval&
 TTransactionFragmentArguments<Player::FResetEnjApproval>::SetTransactionAssetIdFormat(
 	const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Player::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Player::FResetEnjApproval&
 TTransactionFragmentArguments<Player::FResetEnjApproval>::SetWithAssetData();
 
-template ENJINSDK_API Player::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Player::FResetEnjApproval&
 TTransactionFragmentArguments<Player::FResetEnjApproval>::SetWithBlockchainData();
 
-template ENJINSDK_API Player::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Player::FResetEnjApproval&
 TTransactionFragmentArguments<Player::FResetEnjApproval>::SetWithEncodedData();
 
-template ENJINSDK_API Player::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Player::FResetEnjApproval&
 TTransactionFragmentArguments<Player::FResetEnjApproval>::SetWithError();
 
-template ENJINSDK_API Player::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Player::FResetEnjApproval&
 TTransactionFragmentArguments<Player::FResetEnjApproval>::SetWithLogEvent();
 
-template ENJINSDK_API Player::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Player::FResetEnjApproval&
 TTransactionFragmentArguments<Player::FResetEnjApproval>::SetWithMeta();
 
-template ENJINSDK_API Player::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Player::FResetEnjApproval&
 TTransactionFragmentArguments<Player::FResetEnjApproval>::SetWithNonce();
 
-template ENJINSDK_API Player::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Player::FResetEnjApproval&
 TTransactionFragmentArguments<Player::FResetEnjApproval>::SetWithReceipt();
 
-template ENJINSDK_API Player::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Player::FResetEnjApproval&
 TTransactionFragmentArguments<Player::FResetEnjApproval>::SetWithReceiptLogs();
 
-template ENJINSDK_API Player::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Player::FResetEnjApproval&
 TTransactionFragmentArguments<Player::FResetEnjApproval>::SetWithSignedTxs();
 
-template ENJINSDK_API Player::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Player::FResetEnjApproval&
 TTransactionFragmentArguments<Player::FResetEnjApproval>::SetWithState();
 
-template ENJINSDK_API Player::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Player::FResetEnjApproval&
 TTransactionFragmentArguments<Player::FResetEnjApproval>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Player::FResetEnjApproval&
+template ENJINSDKRUNTIME_API Player::FResetEnjApproval&
 TTransactionFragmentArguments<Player::FResetEnjApproval>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

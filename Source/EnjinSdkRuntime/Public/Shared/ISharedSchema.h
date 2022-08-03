@@ -28,7 +28,7 @@ namespace Shared
 /**
  * @brief Interface for shared schema.
  */
-class ENJINSDK_API ISharedSchema
+class ENJINSDKRUNTIME_API ISharedSchema
 {
 public:
 	/**

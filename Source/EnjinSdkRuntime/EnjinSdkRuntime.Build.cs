@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class EnjinSdk : ModuleRules
+public class EnjinSdkRuntime : ModuleRules
 {
-	public EnjinSdk(ReadOnlyTargetRules Target) : base(Target)
+	public EnjinSdkRuntime(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 

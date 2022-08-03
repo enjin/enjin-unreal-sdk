@@ -11,7 +11,7 @@ namespace Util
 /**
  * @brief Utility class for processing strings.
  */
-class ENJINSDK_API FStringUtil final
+class ENJINSDKRUNTIME_API FStringUtil final
 {
 public:
 	FStringUtil() = delete;

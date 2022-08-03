@@ -14,7 +14,7 @@ namespace Project
 /**
  * @brief Request for setting the transfer fee of an asset.
  */
-class ENJINSDK_API FSetTransferFee final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FSetTransferFee final : public GraphQl::IGraphQlRequest,
                                            public TTransactionRequestArguments<FSetTransferFee>
 {
 public:
@@ -67,7 +67,7 @@ private:
 
 // region TTransactionRequestArguments
 
-template ENJINSDK_API FSetTransferFee&
+template ENJINSDKRUNTIME_API FSetTransferFee&
 TTransactionRequestArguments<FSetTransferFee>::SetEthAddress(FString Address);
 
 // endregion TTransactionRequestArguments
@@ -77,47 +77,47 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Project::FSetTransferFee&
+template ENJINSDKRUNTIME_API Project::FSetTransferFee&
 TTransactionFragmentArguments<Project::FSetTransferFee>::SetTransactionAssetIdFormat(
 	const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FSetTransferFee&
+template ENJINSDKRUNTIME_API Project::FSetTransferFee&
 TTransactionFragmentArguments<Project::FSetTransferFee>::SetWithAssetData();
 
-template ENJINSDK_API Project::FSetTransferFee&
+template ENJINSDKRUNTIME_API Project::FSetTransferFee&
 TTransactionFragmentArguments<Project::FSetTransferFee>::SetWithBlockchainData();
 
-template ENJINSDK_API Project::FSetTransferFee&
+template ENJINSDKRUNTIME_API Project::FSetTransferFee&
 TTransactionFragmentArguments<Project::FSetTransferFee>::SetWithEncodedData();
 
-template ENJINSDK_API Project::FSetTransferFee&
+template ENJINSDKRUNTIME_API Project::FSetTransferFee&
 TTransactionFragmentArguments<Project::FSetTransferFee>::SetWithError();
 
-template ENJINSDK_API Project::FSetTransferFee&
+template ENJINSDKRUNTIME_API Project::FSetTransferFee&
 TTransactionFragmentArguments<Project::FSetTransferFee>::SetWithLogEvent();
 
-template ENJINSDK_API Project::FSetTransferFee&
+template ENJINSDKRUNTIME_API Project::FSetTransferFee&
 TTransactionFragmentArguments<Project::FSetTransferFee>::SetWithMeta();
 
-template ENJINSDK_API Project::FSetTransferFee&
+template ENJINSDKRUNTIME_API Project::FSetTransferFee&
 TTransactionFragmentArguments<Project::FSetTransferFee>::SetWithNonce();
 
-template ENJINSDK_API Project::FSetTransferFee&
+template ENJINSDKRUNTIME_API Project::FSetTransferFee&
 TTransactionFragmentArguments<Project::FSetTransferFee>::SetWithReceipt();
 
-template ENJINSDK_API Project::FSetTransferFee&
+template ENJINSDKRUNTIME_API Project::FSetTransferFee&
 TTransactionFragmentArguments<Project::FSetTransferFee>::SetWithReceiptLogs();
 
-template ENJINSDK_API Project::FSetTransferFee&
+template ENJINSDKRUNTIME_API Project::FSetTransferFee&
 TTransactionFragmentArguments<Project::FSetTransferFee>::SetWithSignedTxs();
 
-template ENJINSDK_API Project::FSetTransferFee&
+template ENJINSDKRUNTIME_API Project::FSetTransferFee&
 TTransactionFragmentArguments<Project::FSetTransferFee>::SetWithState();
 
-template ENJINSDK_API Project::FSetTransferFee&
+template ENJINSDKRUNTIME_API Project::FSetTransferFee&
 TTransactionFragmentArguments<Project::FSetTransferFee>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Project::FSetTransferFee&
+template ENJINSDKRUNTIME_API Project::FSetTransferFee&
 TTransactionFragmentArguments<Project::FSetTransferFee>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

@@ -14,7 +14,7 @@ namespace Player
 /**
  * @brief Request to sign a message to prove wallet ownership.
  */
-class ENJINSDK_API FMessage final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FMessage final : public GraphQl::IGraphQlRequest,
                                     public Shared::TTransactionFragmentArguments<FMessage>
 {
 public:
@@ -62,46 +62,46 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Player::FMessage&
+template ENJINSDKRUNTIME_API Player::FMessage&
 TTransactionFragmentArguments<Player::FMessage>::SetTransactionAssetIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Player::FMessage&
+template ENJINSDKRUNTIME_API Player::FMessage&
 TTransactionFragmentArguments<Player::FMessage>::SetWithAssetData();
 
-template ENJINSDK_API Player::FMessage&
+template ENJINSDKRUNTIME_API Player::FMessage&
 TTransactionFragmentArguments<Player::FMessage>::SetWithBlockchainData();
 
-template ENJINSDK_API Player::FMessage&
+template ENJINSDKRUNTIME_API Player::FMessage&
 TTransactionFragmentArguments<Player::FMessage>::SetWithEncodedData();
 
-template ENJINSDK_API Player::FMessage&
+template ENJINSDKRUNTIME_API Player::FMessage&
 TTransactionFragmentArguments<Player::FMessage>::SetWithError();
 
-template ENJINSDK_API Player::FMessage&
+template ENJINSDKRUNTIME_API Player::FMessage&
 TTransactionFragmentArguments<Player::FMessage>::SetWithLogEvent();
 
-template ENJINSDK_API Player::FMessage&
+template ENJINSDKRUNTIME_API Player::FMessage&
 TTransactionFragmentArguments<Player::FMessage>::SetWithMeta();
 
-template ENJINSDK_API Player::FMessage&
+template ENJINSDKRUNTIME_API Player::FMessage&
 TTransactionFragmentArguments<Player::FMessage>::SetWithNonce();
 
-template ENJINSDK_API Player::FMessage&
+template ENJINSDKRUNTIME_API Player::FMessage&
 TTransactionFragmentArguments<Player::FMessage>::SetWithReceipt();
 
-template ENJINSDK_API Player::FMessage&
+template ENJINSDKRUNTIME_API Player::FMessage&
 TTransactionFragmentArguments<Player::FMessage>::SetWithReceiptLogs();
 
-template ENJINSDK_API Player::FMessage&
+template ENJINSDKRUNTIME_API Player::FMessage&
 TTransactionFragmentArguments<Player::FMessage>::SetWithSignedTxs();
 
-template ENJINSDK_API Player::FMessage&
+template ENJINSDKRUNTIME_API Player::FMessage&
 TTransactionFragmentArguments<Player::FMessage>::SetWithState();
 
-template ENJINSDK_API Player::FMessage&
+template ENJINSDKRUNTIME_API Player::FMessage&
 TTransactionFragmentArguments<Player::FMessage>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Player::FMessage&
+template ENJINSDKRUNTIME_API Player::FMessage&
 TTransactionFragmentArguments<Player::FMessage>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

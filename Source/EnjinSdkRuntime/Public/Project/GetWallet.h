@@ -14,7 +14,7 @@ namespace Project
 /**
  * @brief Request for getting a wallet from the platform.
  */
-class ENJINSDK_API FGetWallet final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FGetWallet final : public GraphQl::IGraphQlRequest,
                                       public Shared::TWalletFragmentArguments<FGetWallet>
 {
 public:
@@ -70,118 +70,118 @@ namespace Shared
 {
 // region TAssetFragmentArguments
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TAssetFragmentArguments<Project::FGetWallet>::SetAssetIdFormat(Model::EAssetIdFormat AssetIdFormat);
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TAssetFragmentArguments<Project::FGetWallet>::SetWithAssetBlocks();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TAssetFragmentArguments<Project::FGetWallet>::SetWithAssetVariantMode();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TAssetFragmentArguments<Project::FGetWallet>::SetWithAssetVariants();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TAssetFragmentArguments<Project::FGetWallet>::SetWithConfigData();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TAssetFragmentArguments<Project::FGetWallet>::SetWithCreator();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TAssetFragmentArguments<Project::FGetWallet>::SetWithMeltDetails();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TAssetFragmentArguments<Project::FGetWallet>::SetWithMetadataUri();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TAssetFragmentArguments<Project::FGetWallet>::SetWithStateData();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TAssetFragmentArguments<Project::FGetWallet>::SetWithSupplyDetails();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TAssetFragmentArguments<Project::FGetWallet>::SetWithTransferSettings();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TAssetFragmentArguments<Project::FGetWallet>::SetWithVariantMetadata();
 
 // endregion TAssetFragmentArguments
 
 // region TBalanceFragmentArguments
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TBalanceFragmentArguments<Project::FGetWallet>::SetBalIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TBalanceFragmentArguments<Project::FGetWallet>::SetBalIndexFormat(const Model::EAssetIndexFormat Format);
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TBalanceFragmentArguments<Project::FGetWallet>::SetWithBalProjectUuid();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TBalanceFragmentArguments<Project::FGetWallet>::SetWithBalWalletAddress();
 
 // endregion TBalanceFragmentArguments
 
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TTransactionFragmentArguments<Project::FGetWallet>::SetTransactionAssetIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TTransactionFragmentArguments<Project::FGetWallet>::SetWithAssetData();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TTransactionFragmentArguments<Project::FGetWallet>::SetWithBlockchainData();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TTransactionFragmentArguments<Project::FGetWallet>::SetWithEncodedData();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TTransactionFragmentArguments<Project::FGetWallet>::SetWithError();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TTransactionFragmentArguments<Project::FGetWallet>::SetWithLogEvent();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TTransactionFragmentArguments<Project::FGetWallet>::SetWithMeta();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TTransactionFragmentArguments<Project::FGetWallet>::SetWithNonce();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TTransactionFragmentArguments<Project::FGetWallet>::SetWithReceipt();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TTransactionFragmentArguments<Project::FGetWallet>::SetWithReceiptLogs();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TTransactionFragmentArguments<Project::FGetWallet>::SetWithSignedTxs();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TTransactionFragmentArguments<Project::FGetWallet>::SetWithState();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TTransactionFragmentArguments<Project::FGetWallet>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TTransactionFragmentArguments<Project::FGetWallet>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments
 
 // region TWalletFragmentArguments
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TWalletFragmentArguments<Project::FGetWallet>::SetWalletBalanceFilter(Model::FBalanceFilter Filter);
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TWalletFragmentArguments<Project::FGetWallet>::SetWithAssetsCreated();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TWalletFragmentArguments<Project::FGetWallet>::SetWithWalletBalances();
 
-template ENJINSDK_API Project::FGetWallet&
+template ENJINSDKRUNTIME_API Project::FGetWallet&
 TWalletFragmentArguments<Project::FGetWallet>::SetWithWalletTransactions();
 
 // endregion TWalletFragmentArguments

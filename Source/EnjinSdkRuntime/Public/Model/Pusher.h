@@ -15,7 +15,7 @@ namespace Model
 /**
  * @brief Models Pusher settings for the platform.
  */
-class ENJINSDK_API FPusher final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FPusher final : public Serialization::IDeserializable
 {
 public:
 	/**

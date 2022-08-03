@@ -16,7 +16,7 @@ namespace Shared
  * @tparam T The type of the implementing class.
  */
 template <class T>
-class ENJINSDK_API TPlayerFragmentArguments : public TWalletFragmentArguments<T>
+class ENJINSDKRUNTIME_API TPlayerFragmentArguments : public TWalletFragmentArguments<T>
 {
 public:
 	/**

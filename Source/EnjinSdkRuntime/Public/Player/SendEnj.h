@@ -14,7 +14,7 @@ namespace Player
 /**
  * @brief Request for sending ENJ.
  */
-class ENJINSDK_API FSendEnj final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FSendEnj final : public GraphQl::IGraphQlRequest,
                                     public Shared::TTransactionFragmentArguments<FSendEnj>
 {
 public:
@@ -71,46 +71,46 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Player::FSendEnj&
+template ENJINSDKRUNTIME_API Player::FSendEnj&
 TTransactionFragmentArguments<Player::FSendEnj>::SetTransactionAssetIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Player::FSendEnj&
+template ENJINSDKRUNTIME_API Player::FSendEnj&
 TTransactionFragmentArguments<Player::FSendEnj>::SetWithAssetData();
 
-template ENJINSDK_API Player::FSendEnj&
+template ENJINSDKRUNTIME_API Player::FSendEnj&
 TTransactionFragmentArguments<Player::FSendEnj>::SetWithBlockchainData();
 
-template ENJINSDK_API Player::FSendEnj&
+template ENJINSDKRUNTIME_API Player::FSendEnj&
 TTransactionFragmentArguments<Player::FSendEnj>::SetWithEncodedData();
 
-template ENJINSDK_API Player::FSendEnj&
+template ENJINSDKRUNTIME_API Player::FSendEnj&
 TTransactionFragmentArguments<Player::FSendEnj>::SetWithError();
 
-template ENJINSDK_API Player::FSendEnj&
+template ENJINSDKRUNTIME_API Player::FSendEnj&
 TTransactionFragmentArguments<Player::FSendEnj>::SetWithLogEvent();
 
-template ENJINSDK_API Player::FSendEnj&
+template ENJINSDKRUNTIME_API Player::FSendEnj&
 TTransactionFragmentArguments<Player::FSendEnj>::SetWithMeta();
 
-template ENJINSDK_API Player::FSendEnj&
+template ENJINSDKRUNTIME_API Player::FSendEnj&
 TTransactionFragmentArguments<Player::FSendEnj>::SetWithNonce();
 
-template ENJINSDK_API Player::FSendEnj&
+template ENJINSDKRUNTIME_API Player::FSendEnj&
 TTransactionFragmentArguments<Player::FSendEnj>::SetWithReceipt();
 
-template ENJINSDK_API Player::FSendEnj&
+template ENJINSDKRUNTIME_API Player::FSendEnj&
 TTransactionFragmentArguments<Player::FSendEnj>::SetWithReceiptLogs();
 
-template ENJINSDK_API Player::FSendEnj&
+template ENJINSDKRUNTIME_API Player::FSendEnj&
 TTransactionFragmentArguments<Player::FSendEnj>::SetWithSignedTxs();
 
-template ENJINSDK_API Player::FSendEnj&
+template ENJINSDKRUNTIME_API Player::FSendEnj&
 TTransactionFragmentArguments<Player::FSendEnj>::SetWithState();
 
-template ENJINSDK_API Player::FSendEnj&
+template ENJINSDKRUNTIME_API Player::FSendEnj&
 TTransactionFragmentArguments<Player::FSendEnj>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Player::FSendEnj&
+template ENJINSDKRUNTIME_API Player::FSendEnj&
 TTransactionFragmentArguments<Player::FSendEnj>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

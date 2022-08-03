@@ -20,7 +20,7 @@ namespace Shared
  * @tparam T The type of the implementing class.
  */
 template <class T>
-class ENJINSDK_API TWalletFragmentArguments : public TAssetFragmentArguments<T>,
+class ENJINSDKRUNTIME_API TWalletFragmentArguments : public TAssetFragmentArguments<T>,
                                               public TBalanceFragmentArguments<T>,
                                               public TTransactionFragmentArguments<T>
 {

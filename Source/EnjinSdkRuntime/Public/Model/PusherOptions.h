@@ -13,7 +13,7 @@ namespace Model
 /**
  * @brief Models Pusher options used by the platform.
  */
-class ENJINSDK_API FPusherOptions final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FPusherOptions final : public Serialization::IDeserializable
 {
 public:
 	/**

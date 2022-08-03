@@ -16,7 +16,7 @@ namespace Util
 /**
  * @brief Timer class for scheduling a single action to run once after a given duration.
  */
-class ENJINSDK_API FTimer final
+class ENJINSDKRUNTIME_API FTimer final
 {
 public:
 	/**

@@ -13,7 +13,7 @@ namespace Project
 /**
  * @brief Request for creating a player for the project.
  */
-class ENJINSDK_API FCreatePlayer final : public GraphQl::IGraphQlRequest
+class ENJINSDKRUNTIME_API FCreatePlayer final : public GraphQl::IGraphQlRequest
 {
 public:
 	/**

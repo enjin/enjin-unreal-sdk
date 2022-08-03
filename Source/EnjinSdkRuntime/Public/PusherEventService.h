@@ -15,7 +15,7 @@ namespace Event
 /**
  * @brief Implementation of @link IEventService @endlink for Pusher events.
  */
-class ENJINSDK_API FPusherEventService final : public IEventService
+class ENJINSDKRUNTIME_API FPusherEventService final : public IEventService
 {
 public:
 	class FPusherEventServiceBuilder;
@@ -237,7 +237,7 @@ public:
 	/**
 	 * @brief Builder class for @link FPusherEventService @endlink.
 	 */
-	class ENJINSDK_API FPusherEventServiceBuilder final
+	class ENJINSDKRUNTIME_API FPusherEventServiceBuilder final
 	{
 	public:
 		/**

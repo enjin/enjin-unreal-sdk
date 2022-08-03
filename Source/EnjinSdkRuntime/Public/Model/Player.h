@@ -15,7 +15,7 @@ namespace Model
 /**
  * @brief Models a player on the platform.
  */
-class ENJINSDK_API FPlayer final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FPlayer final : public Serialization::IDeserializable
 {
 public:
 	/**

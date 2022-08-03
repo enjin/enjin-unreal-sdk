@@ -14,7 +14,7 @@ namespace Model
 /**
  * @brief Models a blockchain transaction log.
  */
-class ENJINSDK_API FTransactionLog final : Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FTransactionLog final : Serialization::IDeserializable
 {
 public:
 	/**

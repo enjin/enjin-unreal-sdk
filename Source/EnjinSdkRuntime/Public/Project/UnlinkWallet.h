@@ -13,7 +13,7 @@ namespace Project
 /**
  * @brief Request for unlinking a wallet from the project.
  */
-class ENJINSDK_API FUnlinkWallet final : public GraphQl::IGraphQlRequest
+class ENJINSDKRUNTIME_API FUnlinkWallet final : public GraphQl::IGraphQlRequest
 {
 public:
 	/**

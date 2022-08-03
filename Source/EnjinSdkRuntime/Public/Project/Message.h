@@ -14,7 +14,7 @@ namespace Project
 /**
  * @brief Request to sign a message to prove wallet ownership.
  */
-class ENJINSDK_API FMessage final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FMessage final : public GraphQl::IGraphQlRequest,
                                     public TTransactionRequestArguments<FMessage>
 {
 public:
@@ -59,7 +59,7 @@ private:
 
 // region TTransactionRequestArguments
 
-template ENJINSDK_API FMessage&
+template ENJINSDKRUNTIME_API FMessage&
 TTransactionRequestArguments<FMessage>::SetEthAddress(FString Address);
 
 // endregion TTransactionRequestArguments
@@ -69,46 +69,46 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Project::FMessage&
+template ENJINSDKRUNTIME_API Project::FMessage&
 TTransactionFragmentArguments<Project::FMessage>::SetTransactionAssetIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FMessage&
+template ENJINSDKRUNTIME_API Project::FMessage&
 TTransactionFragmentArguments<Project::FMessage>::SetWithAssetData();
 
-template ENJINSDK_API Project::FMessage&
+template ENJINSDKRUNTIME_API Project::FMessage&
 TTransactionFragmentArguments<Project::FMessage>::SetWithBlockchainData();
 
-template ENJINSDK_API Project::FMessage&
+template ENJINSDKRUNTIME_API Project::FMessage&
 TTransactionFragmentArguments<Project::FMessage>::SetWithEncodedData();
 
-template ENJINSDK_API Project::FMessage&
+template ENJINSDKRUNTIME_API Project::FMessage&
 TTransactionFragmentArguments<Project::FMessage>::SetWithError();
 
-template ENJINSDK_API Project::FMessage&
+template ENJINSDKRUNTIME_API Project::FMessage&
 TTransactionFragmentArguments<Project::FMessage>::SetWithLogEvent();
 
-template ENJINSDK_API Project::FMessage&
+template ENJINSDKRUNTIME_API Project::FMessage&
 TTransactionFragmentArguments<Project::FMessage>::SetWithMeta();
 
-template ENJINSDK_API Project::FMessage&
+template ENJINSDKRUNTIME_API Project::FMessage&
 TTransactionFragmentArguments<Project::FMessage>::SetWithNonce();
 
-template ENJINSDK_API Project::FMessage&
+template ENJINSDKRUNTIME_API Project::FMessage&
 TTransactionFragmentArguments<Project::FMessage>::SetWithReceipt();
 
-template ENJINSDK_API Project::FMessage&
+template ENJINSDKRUNTIME_API Project::FMessage&
 TTransactionFragmentArguments<Project::FMessage>::SetWithReceiptLogs();
 
-template ENJINSDK_API Project::FMessage&
+template ENJINSDKRUNTIME_API Project::FMessage&
 TTransactionFragmentArguments<Project::FMessage>::SetWithSignedTxs();
 
-template ENJINSDK_API Project::FMessage&
+template ENJINSDKRUNTIME_API Project::FMessage&
 TTransactionFragmentArguments<Project::FMessage>::SetWithState();
 
-template ENJINSDK_API Project::FMessage&
+template ENJINSDKRUNTIME_API Project::FMessage&
 TTransactionFragmentArguments<Project::FMessage>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Project::FMessage&
+template ENJINSDKRUNTIME_API Project::FMessage&
 TTransactionFragmentArguments<Project::FMessage>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

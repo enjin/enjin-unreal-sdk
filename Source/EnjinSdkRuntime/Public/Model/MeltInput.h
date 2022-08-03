@@ -13,7 +13,7 @@ namespace Model
 /**
  * @brief Models a melt input for melt requests.
  */
-class ENJINSDK_API FMeltInput final : public Serialization::ISerializable
+class ENJINSDKRUNTIME_API FMeltInput final : public Serialization::ISerializable
 {
 public:
 	/**

@@ -15,7 +15,7 @@ namespace Model
 /**
  * @brief Models sorting input for assets.
  */
-class ENJINSDK_API FAssetSortInput final : public Serialization::ISerializable
+class ENJINSDKRUNTIME_API FAssetSortInput final : public Serialization::ISerializable
 {
 public:
 	/**

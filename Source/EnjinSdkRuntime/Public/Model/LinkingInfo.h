@@ -13,7 +13,7 @@ namespace Model
 /**
  * @brief Models the linking information for a player.
  */
-class ENJINSDK_API FLinkingInfo final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FLinkingInfo final : public Serialization::IDeserializable
 {
 public:
 	/**

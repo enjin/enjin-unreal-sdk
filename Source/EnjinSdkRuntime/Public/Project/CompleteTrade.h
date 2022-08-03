@@ -14,7 +14,7 @@ namespace Project
 /**
  * @brief Request for completing a trade between two wallets.
  */
-class ENJINSDK_API FCompleteTrade final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FCompleteTrade final : public GraphQl::IGraphQlRequest,
                                           public TTransactionRequestArguments<FCompleteTrade>
 {
 public:
@@ -59,7 +59,7 @@ private:
 
 // region TTransactionRequestArguments
 
-template ENJINSDK_API FCompleteTrade&
+template ENJINSDKRUNTIME_API FCompleteTrade&
 TTransactionRequestArguments<FCompleteTrade>::SetEthAddress(FString Address);
 
 // endregion TTransactionRequestArguments
@@ -69,46 +69,46 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Project::FCompleteTrade&
+template ENJINSDKRUNTIME_API Project::FCompleteTrade&
 TTransactionFragmentArguments<Project::FCompleteTrade>::SetTransactionAssetIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FCompleteTrade&
+template ENJINSDKRUNTIME_API Project::FCompleteTrade&
 TTransactionFragmentArguments<Project::FCompleteTrade>::SetWithAssetData();
 
-template ENJINSDK_API Project::FCompleteTrade&
+template ENJINSDKRUNTIME_API Project::FCompleteTrade&
 TTransactionFragmentArguments<Project::FCompleteTrade>::SetWithBlockchainData();
 
-template ENJINSDK_API Project::FCompleteTrade&
+template ENJINSDKRUNTIME_API Project::FCompleteTrade&
 TTransactionFragmentArguments<Project::FCompleteTrade>::SetWithEncodedData();
 
-template ENJINSDK_API Project::FCompleteTrade&
+template ENJINSDKRUNTIME_API Project::FCompleteTrade&
 TTransactionFragmentArguments<Project::FCompleteTrade>::SetWithError();
 
-template ENJINSDK_API Project::FCompleteTrade&
+template ENJINSDKRUNTIME_API Project::FCompleteTrade&
 TTransactionFragmentArguments<Project::FCompleteTrade>::SetWithLogEvent();
 
-template ENJINSDK_API Project::FCompleteTrade&
+template ENJINSDKRUNTIME_API Project::FCompleteTrade&
 TTransactionFragmentArguments<Project::FCompleteTrade>::SetWithMeta();
 
-template ENJINSDK_API Project::FCompleteTrade&
+template ENJINSDKRUNTIME_API Project::FCompleteTrade&
 TTransactionFragmentArguments<Project::FCompleteTrade>::SetWithNonce();
 
-template ENJINSDK_API Project::FCompleteTrade&
+template ENJINSDKRUNTIME_API Project::FCompleteTrade&
 TTransactionFragmentArguments<Project::FCompleteTrade>::SetWithReceipt();
 
-template ENJINSDK_API Project::FCompleteTrade&
+template ENJINSDKRUNTIME_API Project::FCompleteTrade&
 TTransactionFragmentArguments<Project::FCompleteTrade>::SetWithReceiptLogs();
 
-template ENJINSDK_API Project::FCompleteTrade&
+template ENJINSDKRUNTIME_API Project::FCompleteTrade&
 TTransactionFragmentArguments<Project::FCompleteTrade>::SetWithSignedTxs();
 
-template ENJINSDK_API Project::FCompleteTrade&
+template ENJINSDKRUNTIME_API Project::FCompleteTrade&
 TTransactionFragmentArguments<Project::FCompleteTrade>::SetWithState();
 
-template ENJINSDK_API Project::FCompleteTrade&
+template ENJINSDKRUNTIME_API Project::FCompleteTrade&
 TTransactionFragmentArguments<Project::FCompleteTrade>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Project::FCompleteTrade&
+template ENJINSDKRUNTIME_API Project::FCompleteTrade&
 TTransactionFragmentArguments<Project::FCompleteTrade>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

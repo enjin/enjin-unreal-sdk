@@ -14,7 +14,7 @@ namespace Project
 /**
  * @brief Request for setting the melt fee of an asset.
  */
-class ENJINSDK_API FSetMeltFee final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FSetMeltFee final : public GraphQl::IGraphQlRequest,
                                        public TTransactionRequestArguments<FSetMeltFee>
 {
 public:
@@ -68,7 +68,7 @@ private:
 
 // region TTransactionRequestArguments
 
-template ENJINSDK_API FSetMeltFee&
+template ENJINSDKRUNTIME_API FSetMeltFee&
 TTransactionRequestArguments<FSetMeltFee>::SetEthAddress(FString Address);
 
 // endregion TTransactionRequestArguments
@@ -78,46 +78,46 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Project::FSetMeltFee&
+template ENJINSDKRUNTIME_API Project::FSetMeltFee&
 TTransactionFragmentArguments<Project::FSetMeltFee>::SetTransactionAssetIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FSetMeltFee&
+template ENJINSDKRUNTIME_API Project::FSetMeltFee&
 TTransactionFragmentArguments<Project::FSetMeltFee>::SetWithAssetData();
 
-template ENJINSDK_API Project::FSetMeltFee&
+template ENJINSDKRUNTIME_API Project::FSetMeltFee&
 TTransactionFragmentArguments<Project::FSetMeltFee>::SetWithBlockchainData();
 
-template ENJINSDK_API Project::FSetMeltFee&
+template ENJINSDKRUNTIME_API Project::FSetMeltFee&
 TTransactionFragmentArguments<Project::FSetMeltFee>::SetWithEncodedData();
 
-template ENJINSDK_API Project::FSetMeltFee&
+template ENJINSDKRUNTIME_API Project::FSetMeltFee&
 TTransactionFragmentArguments<Project::FSetMeltFee>::SetWithError();
 
-template ENJINSDK_API Project::FSetMeltFee&
+template ENJINSDKRUNTIME_API Project::FSetMeltFee&
 TTransactionFragmentArguments<Project::FSetMeltFee>::SetWithLogEvent();
 
-template ENJINSDK_API Project::FSetMeltFee&
+template ENJINSDKRUNTIME_API Project::FSetMeltFee&
 TTransactionFragmentArguments<Project::FSetMeltFee>::SetWithMeta();
 
-template ENJINSDK_API Project::FSetMeltFee&
+template ENJINSDKRUNTIME_API Project::FSetMeltFee&
 TTransactionFragmentArguments<Project::FSetMeltFee>::SetWithNonce();
 
-template ENJINSDK_API Project::FSetMeltFee&
+template ENJINSDKRUNTIME_API Project::FSetMeltFee&
 TTransactionFragmentArguments<Project::FSetMeltFee>::SetWithReceipt();
 
-template ENJINSDK_API Project::FSetMeltFee&
+template ENJINSDKRUNTIME_API Project::FSetMeltFee&
 TTransactionFragmentArguments<Project::FSetMeltFee>::SetWithReceiptLogs();
 
-template ENJINSDK_API Project::FSetMeltFee&
+template ENJINSDKRUNTIME_API Project::FSetMeltFee&
 TTransactionFragmentArguments<Project::FSetMeltFee>::SetWithSignedTxs();
 
-template ENJINSDK_API Project::FSetMeltFee&
+template ENJINSDKRUNTIME_API Project::FSetMeltFee&
 TTransactionFragmentArguments<Project::FSetMeltFee>::SetWithState();
 
-template ENJINSDK_API Project::FSetMeltFee&
+template ENJINSDKRUNTIME_API Project::FSetMeltFee&
 TTransactionFragmentArguments<Project::FSetMeltFee>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Project::FSetMeltFee&
+template ENJINSDKRUNTIME_API Project::FSetMeltFee&
 TTransactionFragmentArguments<Project::FSetMeltFee>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

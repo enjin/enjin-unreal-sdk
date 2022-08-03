@@ -25,7 +25,7 @@ enum class ETransactionField
  * @param Value The enum value.
  * @return The serialized value.
  */
-ENJINSDK_API const TCHAR* ToString(const ETransactionField Value);
+ENJINSDKRUNTIME_API const TCHAR* ToString(const ETransactionField Value);
 }
 }
 }

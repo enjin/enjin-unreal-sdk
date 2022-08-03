@@ -13,7 +13,7 @@ namespace Model
 /**
  * @brief Models a filter input for asset queries.
  */
-class ENJINSDK_API FAssetFilter final : public Serialization::ISerializable
+class ENJINSDKRUNTIME_API FAssetFilter final : public Serialization::ISerializable
 {
 public:
 	/**

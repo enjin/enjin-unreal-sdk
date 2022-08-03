@@ -14,7 +14,7 @@ namespace Player
 /**
  * @brief Request for approving the crypto items contract to spend ENJ.
  */
-class ENJINSDK_API FApproveEnj final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FApproveEnj final : public GraphQl::IGraphQlRequest,
                                        public Shared::TTransactionFragmentArguments<FApproveEnj>
 {
 public:
@@ -63,46 +63,46 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Player::FApproveEnj&
+template ENJINSDKRUNTIME_API Player::FApproveEnj&
 TTransactionFragmentArguments<Player::FApproveEnj>::SetTransactionAssetIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Player::FApproveEnj&
+template ENJINSDKRUNTIME_API Player::FApproveEnj&
 TTransactionFragmentArguments<Player::FApproveEnj>::SetWithAssetData();
 
-template ENJINSDK_API Player::FApproveEnj&
+template ENJINSDKRUNTIME_API Player::FApproveEnj&
 TTransactionFragmentArguments<Player::FApproveEnj>::SetWithBlockchainData();
 
-template ENJINSDK_API Player::FApproveEnj&
+template ENJINSDKRUNTIME_API Player::FApproveEnj&
 TTransactionFragmentArguments<Player::FApproveEnj>::SetWithEncodedData();
 
-template ENJINSDK_API Player::FApproveEnj&
+template ENJINSDKRUNTIME_API Player::FApproveEnj&
 TTransactionFragmentArguments<Player::FApproveEnj>::SetWithError();
 
-template ENJINSDK_API Player::FApproveEnj&
+template ENJINSDKRUNTIME_API Player::FApproveEnj&
 TTransactionFragmentArguments<Player::FApproveEnj>::SetWithLogEvent();
 
-template ENJINSDK_API Player::FApproveEnj&
+template ENJINSDKRUNTIME_API Player::FApproveEnj&
 TTransactionFragmentArguments<Player::FApproveEnj>::SetWithMeta();
 
-template ENJINSDK_API Player::FApproveEnj&
+template ENJINSDKRUNTIME_API Player::FApproveEnj&
 TTransactionFragmentArguments<Player::FApproveEnj>::SetWithNonce();
 
-template ENJINSDK_API Player::FApproveEnj&
+template ENJINSDKRUNTIME_API Player::FApproveEnj&
 TTransactionFragmentArguments<Player::FApproveEnj>::SetWithReceipt();
 
-template ENJINSDK_API Player::FApproveEnj&
+template ENJINSDKRUNTIME_API Player::FApproveEnj&
 TTransactionFragmentArguments<Player::FApproveEnj>::SetWithReceiptLogs();
 
-template ENJINSDK_API Player::FApproveEnj&
+template ENJINSDKRUNTIME_API Player::FApproveEnj&
 TTransactionFragmentArguments<Player::FApproveEnj>::SetWithSignedTxs();
 
-template ENJINSDK_API Player::FApproveEnj&
+template ENJINSDKRUNTIME_API Player::FApproveEnj&
 TTransactionFragmentArguments<Player::FApproveEnj>::SetWithState();
 
-template ENJINSDK_API Player::FApproveEnj&
+template ENJINSDKRUNTIME_API Player::FApproveEnj&
 TTransactionFragmentArguments<Player::FApproveEnj>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Player::FApproveEnj&
+template ENJINSDKRUNTIME_API Player::FApproveEnj&
 TTransactionFragmentArguments<Player::FApproveEnj>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

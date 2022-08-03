@@ -14,7 +14,7 @@ namespace Model
 /**
  * @brief Models the blockchain data of a transaction.
  */
-class ENJINSDK_API FBlockchainData final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FBlockchainData final : public Serialization::IDeserializable
 {
 public:
 	/**

@@ -17,7 +17,7 @@ namespace Project
  * @tparam T The type of the implementing class.
  */
 template <class T>
-class ENJINSDK_API TTransactionRequestArguments : public Shared::TTransactionFragmentArguments<T>
+class ENJINSDKRUNTIME_API TTransactionRequestArguments : public Shared::TTransactionFragmentArguments<T>
 {
 public:
 	/**

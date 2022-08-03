@@ -14,7 +14,7 @@ namespace Shared
 /**
  * @brief Class for sending requests shared across schemas.
  */
-class ENJINSDK_API FSharedSchema : public ISharedSchema,
+class ENJINSDKRUNTIME_API FSharedSchema : public ISharedSchema,
                                    public FBaseSchema
 {
 public:

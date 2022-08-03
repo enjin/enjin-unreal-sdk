@@ -11,7 +11,7 @@ namespace Serialization
 /**
  * @brief Interface for deserialization.
  */
-class ENJINSDK_API IDeserializable
+class ENJINSDKRUNTIME_API IDeserializable
 {
 public:
 	/**

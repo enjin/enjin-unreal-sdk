@@ -14,7 +14,7 @@ namespace Model
 /**
  * @brief Models transfer fee settings for an asset.
  */
-class ENJINSDK_API FAssetTransferFeeSettings final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FAssetTransferFeeSettings final : public Serialization::IDeserializable
 {
 public:
 	/**

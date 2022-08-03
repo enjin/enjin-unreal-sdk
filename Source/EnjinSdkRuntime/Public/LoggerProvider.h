@@ -26,7 +26,7 @@ using FLoggerProviderPtr = TSharedPtr<FLoggerProvider>;
 /**
  * @brief Provider class for an instance of @link ILogger @endlink.
  */
-class ENJINSDK_API FLoggerProvider final
+class ENJINSDKRUNTIME_API FLoggerProvider final
 {
 public:
 	FLoggerProvider() = delete;

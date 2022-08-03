@@ -15,7 +15,7 @@ namespace Model
 /**
  * @brief Models the configuration data of a asset.
  */
-class ENJINSDK_API FAssetConfigData final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FAssetConfigData final : public Serialization::IDeserializable
 {
 public:
 	/**

@@ -13,7 +13,7 @@ namespace Project
 /**
  * @brief Request for getting a access token for a player.
  */
-class ENJINSDK_API FAuthPlayer final : public GraphQl::IGraphQlRequest
+class ENJINSDKRUNTIME_API FAuthPlayer final : public GraphQl::IGraphQlRequest
 {
 public:
 	/**

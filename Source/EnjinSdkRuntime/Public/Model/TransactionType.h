@@ -51,14 +51,14 @@ enum class ETransactionType
  * @param Value The enum value.
  * @return The serialized value.
  */
-ENJINSDK_API const TCHAR* ToString(const ETransactionType Value);
+ENJINSDKRUNTIME_API const TCHAR* ToString(const ETransactionType Value);
 
 /**
  * @brief Deserializes the transaction type from a string.
  * @param String The serialized string.
  * @return The transaction type.
  */
-ENJINSDK_API ETransactionType ToTransactionType(const FString& String);
+ENJINSDKRUNTIME_API ETransactionType ToTransactionType(const FString& String);
 }
 }
 }

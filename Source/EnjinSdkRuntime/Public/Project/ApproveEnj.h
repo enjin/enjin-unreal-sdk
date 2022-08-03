@@ -14,7 +14,7 @@ namespace Project
 /**
  * @brief Request for approving the crypto items contract to spend ENJ.
  */
-class ENJINSDK_API FApproveEnj final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FApproveEnj final : public GraphQl::IGraphQlRequest,
                                        public TTransactionRequestArguments<FApproveEnj>
 {
 public:
@@ -60,7 +60,7 @@ private:
 
 // region TTransactionRequestArguments
 
-template ENJINSDK_API FApproveEnj&
+template ENJINSDKRUNTIME_API FApproveEnj&
 TTransactionRequestArguments<FApproveEnj>::SetEthAddress(FString Address);
 
 // endregion TTransactionRequestArguments
@@ -70,46 +70,46 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Project::FApproveEnj&
+template ENJINSDKRUNTIME_API Project::FApproveEnj&
 TTransactionFragmentArguments<Project::FApproveEnj>::SetTransactionAssetIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FApproveEnj&
+template ENJINSDKRUNTIME_API Project::FApproveEnj&
 TTransactionFragmentArguments<Project::FApproveEnj>::SetWithAssetData();
 
-template ENJINSDK_API Project::FApproveEnj&
+template ENJINSDKRUNTIME_API Project::FApproveEnj&
 TTransactionFragmentArguments<Project::FApproveEnj>::SetWithBlockchainData();
 
-template ENJINSDK_API Project::FApproveEnj&
+template ENJINSDKRUNTIME_API Project::FApproveEnj&
 TTransactionFragmentArguments<Project::FApproveEnj>::SetWithEncodedData();
 
-template ENJINSDK_API Project::FApproveEnj&
+template ENJINSDKRUNTIME_API Project::FApproveEnj&
 TTransactionFragmentArguments<Project::FApproveEnj>::SetWithError();
 
-template ENJINSDK_API Project::FApproveEnj&
+template ENJINSDKRUNTIME_API Project::FApproveEnj&
 TTransactionFragmentArguments<Project::FApproveEnj>::SetWithLogEvent();
 
-template ENJINSDK_API Project::FApproveEnj&
+template ENJINSDKRUNTIME_API Project::FApproveEnj&
 TTransactionFragmentArguments<Project::FApproveEnj>::SetWithMeta();
 
-template ENJINSDK_API Project::FApproveEnj&
+template ENJINSDKRUNTIME_API Project::FApproveEnj&
 TTransactionFragmentArguments<Project::FApproveEnj>::SetWithNonce();
 
-template ENJINSDK_API Project::FApproveEnj&
+template ENJINSDKRUNTIME_API Project::FApproveEnj&
 TTransactionFragmentArguments<Project::FApproveEnj>::SetWithReceipt();
 
-template ENJINSDK_API Project::FApproveEnj&
+template ENJINSDKRUNTIME_API Project::FApproveEnj&
 TTransactionFragmentArguments<Project::FApproveEnj>::SetWithReceiptLogs();
 
-template ENJINSDK_API Project::FApproveEnj&
+template ENJINSDKRUNTIME_API Project::FApproveEnj&
 TTransactionFragmentArguments<Project::FApproveEnj>::SetWithSignedTxs();
 
-template ENJINSDK_API Project::FApproveEnj&
+template ENJINSDKRUNTIME_API Project::FApproveEnj&
 TTransactionFragmentArguments<Project::FApproveEnj>::SetWithState();
 
-template ENJINSDK_API Project::FApproveEnj&
+template ENJINSDKRUNTIME_API Project::FApproveEnj&
 TTransactionFragmentArguments<Project::FApproveEnj>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Project::FApproveEnj&
+template ENJINSDKRUNTIME_API Project::FApproveEnj&
 TTransactionFragmentArguments<Project::FApproveEnj>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

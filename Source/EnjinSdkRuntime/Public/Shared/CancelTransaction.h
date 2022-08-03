@@ -13,7 +13,7 @@ namespace Shared
 /**
  * @brief Request for canceling a transaction on the platform.
  */
-class ENJINSDK_API FCancelTransaction final : public GraphQl::IGraphQlRequest
+class ENJINSDKRUNTIME_API FCancelTransaction final : public GraphQl::IGraphQlRequest
 {
 public:
 	/**

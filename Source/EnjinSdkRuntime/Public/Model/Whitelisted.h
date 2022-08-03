@@ -26,7 +26,7 @@ enum class EWhitelisted
  * @param Value The enum value.
  * @return The serialized value.
  */
-ENJINSDK_API const TCHAR* ToString(const EWhitelisted Value);
+ENJINSDKRUNTIME_API const TCHAR* ToString(const EWhitelisted Value);
 }
 }
 }

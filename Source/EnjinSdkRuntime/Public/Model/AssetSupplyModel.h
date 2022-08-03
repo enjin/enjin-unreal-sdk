@@ -31,14 +31,14 @@ enum class EAssetSupplyModel
  * @param String The serialized string.
  * @return The asset supply model.
  */
-ENJINSDK_API EAssetSupplyModel ToAssetSupplyModel(const FString& String);
+ENJINSDKRUNTIME_API EAssetSupplyModel ToAssetSupplyModel(const FString& String);
 
 /**
  * @brief Serializes the asset supply model into a string.
  * @param Value The enum value.
  * @return The serialized value.
  */
-ENJINSDK_API const TCHAR* ToString(const EAssetSupplyModel Value);
+ENJINSDKRUNTIME_API const TCHAR* ToString(const EAssetSupplyModel Value);
 }
 }
 }

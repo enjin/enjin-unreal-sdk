@@ -17,7 +17,7 @@ namespace Project
 /**
  * @brief Request for creating an asset on the platform.
  */
-class ENJINSDK_API FCreateAsset final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FCreateAsset final : public GraphQl::IGraphQlRequest,
                                         public TTransactionRequestArguments<FCreateAsset>
 {
 public:
@@ -127,7 +127,7 @@ private:
 
 // region TTransactionRequestArguments
 
-template ENJINSDK_API FCreateAsset&
+template ENJINSDKRUNTIME_API FCreateAsset&
 TTransactionRequestArguments<FCreateAsset>::SetEthAddress(FString Address);
 
 // endregion TTransactionRequestArguments
@@ -137,46 +137,46 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Project::FCreateAsset&
+template ENJINSDKRUNTIME_API Project::FCreateAsset&
 TTransactionFragmentArguments<Project::FCreateAsset>::SetTransactionAssetIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FCreateAsset&
+template ENJINSDKRUNTIME_API Project::FCreateAsset&
 TTransactionFragmentArguments<Project::FCreateAsset>::SetWithAssetData();
 
-template ENJINSDK_API Project::FCreateAsset&
+template ENJINSDKRUNTIME_API Project::FCreateAsset&
 TTransactionFragmentArguments<Project::FCreateAsset>::SetWithBlockchainData();
 
-template ENJINSDK_API Project::FCreateAsset&
+template ENJINSDKRUNTIME_API Project::FCreateAsset&
 TTransactionFragmentArguments<Project::FCreateAsset>::SetWithEncodedData();
 
-template ENJINSDK_API Project::FCreateAsset&
+template ENJINSDKRUNTIME_API Project::FCreateAsset&
 TTransactionFragmentArguments<Project::FCreateAsset>::SetWithError();
 
-template ENJINSDK_API Project::FCreateAsset&
+template ENJINSDKRUNTIME_API Project::FCreateAsset&
 TTransactionFragmentArguments<Project::FCreateAsset>::SetWithLogEvent();
 
-template ENJINSDK_API Project::FCreateAsset&
+template ENJINSDKRUNTIME_API Project::FCreateAsset&
 TTransactionFragmentArguments<Project::FCreateAsset>::SetWithMeta();
 
-template ENJINSDK_API Project::FCreateAsset&
+template ENJINSDKRUNTIME_API Project::FCreateAsset&
 TTransactionFragmentArguments<Project::FCreateAsset>::SetWithNonce();
 
-template ENJINSDK_API Project::FCreateAsset&
+template ENJINSDKRUNTIME_API Project::FCreateAsset&
 TTransactionFragmentArguments<Project::FCreateAsset>::SetWithReceipt();
 
-template ENJINSDK_API Project::FCreateAsset&
+template ENJINSDKRUNTIME_API Project::FCreateAsset&
 TTransactionFragmentArguments<Project::FCreateAsset>::SetWithReceiptLogs();
 
-template ENJINSDK_API Project::FCreateAsset&
+template ENJINSDKRUNTIME_API Project::FCreateAsset&
 TTransactionFragmentArguments<Project::FCreateAsset>::SetWithSignedTxs();
 
-template ENJINSDK_API Project::FCreateAsset&
+template ENJINSDKRUNTIME_API Project::FCreateAsset&
 TTransactionFragmentArguments<Project::FCreateAsset>::SetWithState();
 
-template ENJINSDK_API Project::FCreateAsset&
+template ENJINSDKRUNTIME_API Project::FCreateAsset&
 TTransactionFragmentArguments<Project::FCreateAsset>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Project::FCreateAsset&
+template ENJINSDKRUNTIME_API Project::FCreateAsset&
 TTransactionFragmentArguments<Project::FCreateAsset>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

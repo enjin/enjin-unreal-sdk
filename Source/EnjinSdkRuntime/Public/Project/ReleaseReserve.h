@@ -14,7 +14,7 @@ namespace Project
 /**
  * @brief Request for releasing the reserve of an asset.
  */
-class ENJINSDK_API FReleaseReserve final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FReleaseReserve final : public GraphQl::IGraphQlRequest,
                                            public TTransactionRequestArguments<FReleaseReserve>
 {
 public:
@@ -67,7 +67,7 @@ private:
 
 // region TTransactionRequestArguments
 
-template ENJINSDK_API FReleaseReserve&
+template ENJINSDKRUNTIME_API FReleaseReserve&
 TTransactionRequestArguments<FReleaseReserve>::SetEthAddress(FString Address);
 
 // endregion TTransactionRequestArguments
@@ -77,47 +77,47 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Project::FReleaseReserve&
+template ENJINSDKRUNTIME_API Project::FReleaseReserve&
 TTransactionFragmentArguments<Project::FReleaseReserve>::SetTransactionAssetIdFormat(
 	const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FReleaseReserve&
+template ENJINSDKRUNTIME_API Project::FReleaseReserve&
 TTransactionFragmentArguments<Project::FReleaseReserve>::SetWithAssetData();
 
-template ENJINSDK_API Project::FReleaseReserve&
+template ENJINSDKRUNTIME_API Project::FReleaseReserve&
 TTransactionFragmentArguments<Project::FReleaseReserve>::SetWithBlockchainData();
 
-template ENJINSDK_API Project::FReleaseReserve&
+template ENJINSDKRUNTIME_API Project::FReleaseReserve&
 TTransactionFragmentArguments<Project::FReleaseReserve>::SetWithEncodedData();
 
-template ENJINSDK_API Project::FReleaseReserve&
+template ENJINSDKRUNTIME_API Project::FReleaseReserve&
 TTransactionFragmentArguments<Project::FReleaseReserve>::SetWithError();
 
-template ENJINSDK_API Project::FReleaseReserve&
+template ENJINSDKRUNTIME_API Project::FReleaseReserve&
 TTransactionFragmentArguments<Project::FReleaseReserve>::SetWithLogEvent();
 
-template ENJINSDK_API Project::FReleaseReserve&
+template ENJINSDKRUNTIME_API Project::FReleaseReserve&
 TTransactionFragmentArguments<Project::FReleaseReserve>::SetWithMeta();
 
-template ENJINSDK_API Project::FReleaseReserve&
+template ENJINSDKRUNTIME_API Project::FReleaseReserve&
 TTransactionFragmentArguments<Project::FReleaseReserve>::SetWithNonce();
 
-template ENJINSDK_API Project::FReleaseReserve&
+template ENJINSDKRUNTIME_API Project::FReleaseReserve&
 TTransactionFragmentArguments<Project::FReleaseReserve>::SetWithReceipt();
 
-template ENJINSDK_API Project::FReleaseReserve&
+template ENJINSDKRUNTIME_API Project::FReleaseReserve&
 TTransactionFragmentArguments<Project::FReleaseReserve>::SetWithReceiptLogs();
 
-template ENJINSDK_API Project::FReleaseReserve&
+template ENJINSDKRUNTIME_API Project::FReleaseReserve&
 TTransactionFragmentArguments<Project::FReleaseReserve>::SetWithSignedTxs();
 
-template ENJINSDK_API Project::FReleaseReserve&
+template ENJINSDKRUNTIME_API Project::FReleaseReserve&
 TTransactionFragmentArguments<Project::FReleaseReserve>::SetWithState();
 
-template ENJINSDK_API Project::FReleaseReserve&
+template ENJINSDKRUNTIME_API Project::FReleaseReserve&
 TTransactionFragmentArguments<Project::FReleaseReserve>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Project::FReleaseReserve&
+template ENJINSDKRUNTIME_API Project::FReleaseReserve&
 TTransactionFragmentArguments<Project::FReleaseReserve>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

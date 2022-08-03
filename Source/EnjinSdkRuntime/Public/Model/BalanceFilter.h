@@ -14,7 +14,7 @@ namespace Model
 /**
  * @brief Models a filter input for balance queries.
  */
-class ENJINSDK_API FBalanceFilter final : public Serialization::ISerializable
+class ENJINSDKRUNTIME_API FBalanceFilter final : public Serialization::ISerializable
 {
 public:
 	/**

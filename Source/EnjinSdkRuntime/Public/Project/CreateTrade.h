@@ -15,7 +15,7 @@ namespace Project
 /**
  * @brief Request for creating a trade between two wallets.
  */
-class ENJINSDK_API FCreateTrade final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FCreateTrade final : public GraphQl::IGraphQlRequest,
                                         public TTransactionRequestArguments<FCreateTrade>
 {
 public:
@@ -76,7 +76,7 @@ private:
 
 // region TTransactionRequestArguments
 
-template ENJINSDK_API FCreateTrade&
+template ENJINSDKRUNTIME_API FCreateTrade&
 TTransactionRequestArguments<FCreateTrade>::SetEthAddress(FString Address);
 
 // endregion TTransactionRequestArguments
@@ -86,46 +86,46 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Project::FCreateTrade&
+template ENJINSDKRUNTIME_API Project::FCreateTrade&
 TTransactionFragmentArguments<Project::FCreateTrade>::SetTransactionAssetIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FCreateTrade&
+template ENJINSDKRUNTIME_API Project::FCreateTrade&
 TTransactionFragmentArguments<Project::FCreateTrade>::SetWithAssetData();
 
-template ENJINSDK_API Project::FCreateTrade&
+template ENJINSDKRUNTIME_API Project::FCreateTrade&
 TTransactionFragmentArguments<Project::FCreateTrade>::SetWithBlockchainData();
 
-template ENJINSDK_API Project::FCreateTrade&
+template ENJINSDKRUNTIME_API Project::FCreateTrade&
 TTransactionFragmentArguments<Project::FCreateTrade>::SetWithEncodedData();
 
-template ENJINSDK_API Project::FCreateTrade&
+template ENJINSDKRUNTIME_API Project::FCreateTrade&
 TTransactionFragmentArguments<Project::FCreateTrade>::SetWithError();
 
-template ENJINSDK_API Project::FCreateTrade&
+template ENJINSDKRUNTIME_API Project::FCreateTrade&
 TTransactionFragmentArguments<Project::FCreateTrade>::SetWithLogEvent();
 
-template ENJINSDK_API Project::FCreateTrade&
+template ENJINSDKRUNTIME_API Project::FCreateTrade&
 TTransactionFragmentArguments<Project::FCreateTrade>::SetWithMeta();
 
-template ENJINSDK_API Project::FCreateTrade&
+template ENJINSDKRUNTIME_API Project::FCreateTrade&
 TTransactionFragmentArguments<Project::FCreateTrade>::SetWithNonce();
 
-template ENJINSDK_API Project::FCreateTrade&
+template ENJINSDKRUNTIME_API Project::FCreateTrade&
 TTransactionFragmentArguments<Project::FCreateTrade>::SetWithReceipt();
 
-template ENJINSDK_API Project::FCreateTrade&
+template ENJINSDKRUNTIME_API Project::FCreateTrade&
 TTransactionFragmentArguments<Project::FCreateTrade>::SetWithReceiptLogs();
 
-template ENJINSDK_API Project::FCreateTrade&
+template ENJINSDKRUNTIME_API Project::FCreateTrade&
 TTransactionFragmentArguments<Project::FCreateTrade>::SetWithSignedTxs();
 
-template ENJINSDK_API Project::FCreateTrade&
+template ENJINSDKRUNTIME_API Project::FCreateTrade&
 TTransactionFragmentArguments<Project::FCreateTrade>::SetWithState();
 
-template ENJINSDK_API Project::FCreateTrade&
+template ENJINSDKRUNTIME_API Project::FCreateTrade&
 TTransactionFragmentArguments<Project::FCreateTrade>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Project::FCreateTrade&
+template ENJINSDKRUNTIME_API Project::FCreateTrade&
 TTransactionFragmentArguments<Project::FCreateTrade>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

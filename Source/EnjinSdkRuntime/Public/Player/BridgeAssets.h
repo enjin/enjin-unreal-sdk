@@ -14,7 +14,7 @@ namespace Player
 /**
  * @brief Request for bridging multiple indices of an NFT in a single transaction.
  */
-class ENJINSDK_API FBridgeAssets final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FBridgeAssets final : public GraphQl::IGraphQlRequest,
                                          public Shared::TTransactionFragmentArguments<FBridgeAssets>
 {
 public:
@@ -70,46 +70,46 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Player::FBridgeAssets&
+template ENJINSDKRUNTIME_API Player::FBridgeAssets&
 TTransactionFragmentArguments<Player::FBridgeAssets>::SetTransactionAssetIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Player::FBridgeAssets&
+template ENJINSDKRUNTIME_API Player::FBridgeAssets&
 TTransactionFragmentArguments<Player::FBridgeAssets>::SetWithAssetData();
 
-template ENJINSDK_API Player::FBridgeAssets&
+template ENJINSDKRUNTIME_API Player::FBridgeAssets&
 TTransactionFragmentArguments<Player::FBridgeAssets>::SetWithBlockchainData();
 
-template ENJINSDK_API Player::FBridgeAssets&
+template ENJINSDKRUNTIME_API Player::FBridgeAssets&
 TTransactionFragmentArguments<Player::FBridgeAssets>::SetWithEncodedData();
 
-template ENJINSDK_API Player::FBridgeAssets&
+template ENJINSDKRUNTIME_API Player::FBridgeAssets&
 TTransactionFragmentArguments<Player::FBridgeAssets>::SetWithError();
 
-template ENJINSDK_API Player::FBridgeAssets&
+template ENJINSDKRUNTIME_API Player::FBridgeAssets&
 TTransactionFragmentArguments<Player::FBridgeAssets>::SetWithLogEvent();
 
-template ENJINSDK_API Player::FBridgeAssets&
+template ENJINSDKRUNTIME_API Player::FBridgeAssets&
 TTransactionFragmentArguments<Player::FBridgeAssets>::SetWithMeta();
 
-template ENJINSDK_API Player::FBridgeAssets&
+template ENJINSDKRUNTIME_API Player::FBridgeAssets&
 TTransactionFragmentArguments<Player::FBridgeAssets>::SetWithNonce();
 
-template ENJINSDK_API Player::FBridgeAssets&
+template ENJINSDKRUNTIME_API Player::FBridgeAssets&
 TTransactionFragmentArguments<Player::FBridgeAssets>::SetWithReceipt();
 
-template ENJINSDK_API Player::FBridgeAssets&
+template ENJINSDKRUNTIME_API Player::FBridgeAssets&
 TTransactionFragmentArguments<Player::FBridgeAssets>::SetWithReceiptLogs();
 
-template ENJINSDK_API Player::FBridgeAssets&
+template ENJINSDKRUNTIME_API Player::FBridgeAssets&
 TTransactionFragmentArguments<Player::FBridgeAssets>::SetWithSignedTxs();
 
-template ENJINSDK_API Player::FBridgeAssets&
+template ENJINSDKRUNTIME_API Player::FBridgeAssets&
 TTransactionFragmentArguments<Player::FBridgeAssets>::SetWithState();
 
-template ENJINSDK_API Player::FBridgeAssets&
+template ENJINSDKRUNTIME_API Player::FBridgeAssets&
 TTransactionFragmentArguments<Player::FBridgeAssets>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Player::FBridgeAssets&
+template ENJINSDKRUNTIME_API Player::FBridgeAssets&
 TTransactionFragmentArguments<Player::FBridgeAssets>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

@@ -14,7 +14,7 @@ namespace Model
 /**
  * @brief Models a asset variant.
  */
-class ENJINSDK_API FAssetVariant final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FAssetVariant final : public Serialization::IDeserializable
 {
 public:
 	/**

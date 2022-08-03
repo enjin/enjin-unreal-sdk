@@ -16,7 +16,7 @@ namespace Event
 /**
  * @brief Interface for event service used to register listeners and subscribe to events from the Enjin Cloud.
  */
-class ENJINSDK_API IEventService
+class ENJINSDKRUNTIME_API IEventService
 {
 public:
 	/**

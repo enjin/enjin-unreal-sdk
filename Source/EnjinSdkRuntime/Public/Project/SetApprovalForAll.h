@@ -14,7 +14,7 @@ namespace Project
 /**
  * @brief Request for allowing an operator complete control of all assets owned by the caller.
  */
-class ENJINSDK_API FSetApprovalForAll final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FSetApprovalForAll final : public GraphQl::IGraphQlRequest,
                                               public TTransactionRequestArguments<FSetApprovalForAll>
 {
 public:
@@ -67,7 +67,7 @@ private:
 
 // region TTransactionRequestArguments
 
-template ENJINSDK_API FSetApprovalForAll&
+template ENJINSDKRUNTIME_API FSetApprovalForAll&
 TTransactionRequestArguments<FSetApprovalForAll>::SetEthAddress(FString Address);
 
 // endregion TTransactionRequestArguments
@@ -77,47 +77,47 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Project::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Project::FSetApprovalForAll&
 TTransactionFragmentArguments<Project::FSetApprovalForAll>::SetTransactionAssetIdFormat(
 	const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Project::FSetApprovalForAll&
 TTransactionFragmentArguments<Project::FSetApprovalForAll>::SetWithAssetData();
 
-template ENJINSDK_API Project::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Project::FSetApprovalForAll&
 TTransactionFragmentArguments<Project::FSetApprovalForAll>::SetWithBlockchainData();
 
-template ENJINSDK_API Project::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Project::FSetApprovalForAll&
 TTransactionFragmentArguments<Project::FSetApprovalForAll>::SetWithEncodedData();
 
-template ENJINSDK_API Project::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Project::FSetApprovalForAll&
 TTransactionFragmentArguments<Project::FSetApprovalForAll>::SetWithError();
 
-template ENJINSDK_API Project::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Project::FSetApprovalForAll&
 TTransactionFragmentArguments<Project::FSetApprovalForAll>::SetWithLogEvent();
 
-template ENJINSDK_API Project::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Project::FSetApprovalForAll&
 TTransactionFragmentArguments<Project::FSetApprovalForAll>::SetWithMeta();
 
-template ENJINSDK_API Project::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Project::FSetApprovalForAll&
 TTransactionFragmentArguments<Project::FSetApprovalForAll>::SetWithNonce();
 
-template ENJINSDK_API Project::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Project::FSetApprovalForAll&
 TTransactionFragmentArguments<Project::FSetApprovalForAll>::SetWithReceipt();
 
-template ENJINSDK_API Project::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Project::FSetApprovalForAll&
 TTransactionFragmentArguments<Project::FSetApprovalForAll>::SetWithReceiptLogs();
 
-template ENJINSDK_API Project::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Project::FSetApprovalForAll&
 TTransactionFragmentArguments<Project::FSetApprovalForAll>::SetWithSignedTxs();
 
-template ENJINSDK_API Project::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Project::FSetApprovalForAll&
 TTransactionFragmentArguments<Project::FSetApprovalForAll>::SetWithState();
 
-template ENJINSDK_API Project::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Project::FSetApprovalForAll&
 TTransactionFragmentArguments<Project::FSetApprovalForAll>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Project::FSetApprovalForAll&
+template ENJINSDKRUNTIME_API Project::FSetApprovalForAll&
 TTransactionFragmentArguments<Project::FSetApprovalForAll>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

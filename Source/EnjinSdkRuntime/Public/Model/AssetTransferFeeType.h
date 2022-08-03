@@ -30,14 +30,14 @@ enum class EAssetTransferFeeType
  * @param String The serialized string.
  * @return The asset transfer fee type.
  */
-ENJINSDK_API EAssetTransferFeeType ToAssetTransferFeeType(const FString& String);
+ENJINSDKRUNTIME_API EAssetTransferFeeType ToAssetTransferFeeType(const FString& String);
 
 /**
  * @brief Serializes the asset transfer fee type into a string.
  * @param Value The enum value.
  * @return The serialized value.
  */
-ENJINSDK_API const TCHAR* ToString(const EAssetTransferFeeType Value);
+ENJINSDKRUNTIME_API const TCHAR* ToString(const EAssetTransferFeeType Value);
 }
 }
 }

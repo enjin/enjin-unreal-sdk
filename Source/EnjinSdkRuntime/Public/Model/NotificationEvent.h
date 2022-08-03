@@ -14,7 +14,7 @@ namespace Model
 /**
  * @brief Container class for notification data from the platform.
  */
-class ENJINSDK_API FNotificationEvent final
+class ENJINSDKRUNTIME_API FNotificationEvent final
 {
 public:
 	FNotificationEvent() = delete;

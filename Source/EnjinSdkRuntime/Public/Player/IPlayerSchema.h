@@ -31,7 +31,7 @@ namespace Player
 /**
  * @brief Interface for player schema.
  */
-class ENJINSDK_API IPlayerSchema
+class ENJINSDKRUNTIME_API IPlayerSchema
 {
 public:
 	/**

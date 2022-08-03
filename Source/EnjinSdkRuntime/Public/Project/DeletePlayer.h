@@ -13,7 +13,7 @@ namespace Project
 /**
  * @brief Request for deleting a player for the project.
  */
-class ENJINSDK_API FDeletePlayer final : public GraphQl::IGraphQlRequest
+class ENJINSDKRUNTIME_API FDeletePlayer final : public GraphQl::IGraphQlRequest
 {
 public:
 	/**

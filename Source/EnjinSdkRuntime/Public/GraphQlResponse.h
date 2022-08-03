@@ -17,14 +17,14 @@ namespace GraphQl
  * @brief Variadic template for GraphQL responses.
  */
 template <class ...>
-class ENJINSDK_API TGraphQlResponse;
+class ENJINSDKRUNTIME_API TGraphQlResponse;
 
 /**
  * @brief Models the body of a GraphQL response for responses with a single result.
  * @tparam T The model of the data field.
  */
 template <class T>
-class ENJINSDK_API TGraphQlResponse<T> final : public IGraphQlResponse
+class ENJINSDKRUNTIME_API TGraphQlResponse<T> final : public IGraphQlResponse
 {
 	static_assert(std::is_base_of_v<Serialization::IDeserializable, T> || std::is_same_v<bool, T>,
 		"Class T must inherit from IDeserializable or be type boolean.");
@@ -116,7 +116,7 @@ inline void TGraphQlResponse<bool>::ProcessData(const TSharedRef<FJsonObject> Da
  * @tparam T The model of the data field.
  */
 template <class T>
-class ENJINSDK_API TGraphQlResponse<TArray<T>> final : public IGraphQlResponse
+class ENJINSDKRUNTIME_API TGraphQlResponse<TArray<T>> final : public IGraphQlResponse
 {
 	static_assert(std::is_base_of_v<Serialization::IDeserializable, T>,
 		"Class T must inherit from IDeserializable.");

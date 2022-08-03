@@ -27,7 +27,7 @@ enum class EAssetField
  * @param Value The enum value.
  * @return The serialized value.
  */
-ENJINSDK_API const TCHAR* ToString(const EAssetField Value);
+ENJINSDKRUNTIME_API const TCHAR* ToString(const EAssetField Value);
 }
 }
 }

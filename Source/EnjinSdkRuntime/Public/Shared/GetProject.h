@@ -13,7 +13,7 @@ namespace Shared
 /**
  * @brief Request for getting a project on the platform.
  */
-class ENJINSDK_API FGetProject final : public GraphQl::IGraphQlRequest
+class ENJINSDKRUNTIME_API FGetProject final : public GraphQl::IGraphQlRequest
 {
 public:
 	/**

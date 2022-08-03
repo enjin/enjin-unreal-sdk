@@ -14,7 +14,7 @@ namespace Player
 /**
  * @brief Request for sending a asset.
  */
-class ENJINSDK_API FSendAsset final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FSendAsset final : public GraphQl::IGraphQlRequest,
                                       public Shared::TTransactionFragmentArguments<FSendAsset>
 {
 public:
@@ -94,46 +94,46 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Player::FSendAsset&
+template ENJINSDKRUNTIME_API Player::FSendAsset&
 TTransactionFragmentArguments<Player::FSendAsset>::SetTransactionAssetIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Player::FSendAsset&
+template ENJINSDKRUNTIME_API Player::FSendAsset&
 TTransactionFragmentArguments<Player::FSendAsset>::SetWithAssetData();
 
-template ENJINSDK_API Player::FSendAsset&
+template ENJINSDKRUNTIME_API Player::FSendAsset&
 TTransactionFragmentArguments<Player::FSendAsset>::SetWithBlockchainData();
 
-template ENJINSDK_API Player::FSendAsset&
+template ENJINSDKRUNTIME_API Player::FSendAsset&
 TTransactionFragmentArguments<Player::FSendAsset>::SetWithEncodedData();
 
-template ENJINSDK_API Player::FSendAsset&
+template ENJINSDKRUNTIME_API Player::FSendAsset&
 TTransactionFragmentArguments<Player::FSendAsset>::SetWithError();
 
-template ENJINSDK_API Player::FSendAsset&
+template ENJINSDKRUNTIME_API Player::FSendAsset&
 TTransactionFragmentArguments<Player::FSendAsset>::SetWithLogEvent();
 
-template ENJINSDK_API Player::FSendAsset&
+template ENJINSDKRUNTIME_API Player::FSendAsset&
 TTransactionFragmentArguments<Player::FSendAsset>::SetWithMeta();
 
-template ENJINSDK_API Player::FSendAsset&
+template ENJINSDKRUNTIME_API Player::FSendAsset&
 TTransactionFragmentArguments<Player::FSendAsset>::SetWithNonce();
 
-template ENJINSDK_API Player::FSendAsset&
+template ENJINSDKRUNTIME_API Player::FSendAsset&
 TTransactionFragmentArguments<Player::FSendAsset>::SetWithReceipt();
 
-template ENJINSDK_API Player::FSendAsset&
+template ENJINSDKRUNTIME_API Player::FSendAsset&
 TTransactionFragmentArguments<Player::FSendAsset>::SetWithReceiptLogs();
 
-template ENJINSDK_API Player::FSendAsset&
+template ENJINSDKRUNTIME_API Player::FSendAsset&
 TTransactionFragmentArguments<Player::FSendAsset>::SetWithSignedTxs();
 
-template ENJINSDK_API Player::FSendAsset&
+template ENJINSDKRUNTIME_API Player::FSendAsset&
 TTransactionFragmentArguments<Player::FSendAsset>::SetWithState();
 
-template ENJINSDK_API Player::FSendAsset&
+template ENJINSDKRUNTIME_API Player::FSendAsset&
 TTransactionFragmentArguments<Player::FSendAsset>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Player::FSendAsset&
+template ENJINSDKRUNTIME_API Player::FSendAsset&
 TTransactionFragmentArguments<Player::FSendAsset>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

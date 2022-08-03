@@ -14,7 +14,7 @@ namespace Shared
 /**
  * @brief Request for getting a asset on the platform.
  */
-class ENJINSDK_API FGetAsset final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FGetAsset final : public GraphQl::IGraphQlRequest,
                                      public TAssetFragmentArguments<FGetAsset>
 {
 public:
@@ -57,40 +57,40 @@ private:
 	TOptional<FString> IdOpt;
 };
 
-template ENJINSDK_API FGetAsset&
+template ENJINSDKRUNTIME_API FGetAsset&
 TAssetFragmentArguments<FGetAsset>::SetAssetIdFormat(Model::EAssetIdFormat AssetIdFormat);
 
-template ENJINSDK_API FGetAsset&
+template ENJINSDKRUNTIME_API FGetAsset&
 TAssetFragmentArguments<FGetAsset>::SetWithAssetBlocks();
 
-template ENJINSDK_API FGetAsset&
+template ENJINSDKRUNTIME_API FGetAsset&
 TAssetFragmentArguments<FGetAsset>::SetWithAssetVariantMode();
 
-template ENJINSDK_API FGetAsset&
+template ENJINSDKRUNTIME_API FGetAsset&
 TAssetFragmentArguments<FGetAsset>::SetWithAssetVariants();
 
-template ENJINSDK_API FGetAsset&
+template ENJINSDKRUNTIME_API FGetAsset&
 TAssetFragmentArguments<FGetAsset>::SetWithConfigData();
 
-template ENJINSDK_API FGetAsset&
+template ENJINSDKRUNTIME_API FGetAsset&
 TAssetFragmentArguments<FGetAsset>::SetWithCreator();
 
-template ENJINSDK_API FGetAsset&
+template ENJINSDKRUNTIME_API FGetAsset&
 TAssetFragmentArguments<FGetAsset>::SetWithMeltDetails();
 
-template ENJINSDK_API FGetAsset&
+template ENJINSDKRUNTIME_API FGetAsset&
 TAssetFragmentArguments<FGetAsset>::SetWithMetadataUri();
 
-template ENJINSDK_API FGetAsset&
+template ENJINSDKRUNTIME_API FGetAsset&
 TAssetFragmentArguments<FGetAsset>::SetWithStateData();
 
-template ENJINSDK_API FGetAsset&
+template ENJINSDKRUNTIME_API FGetAsset&
 TAssetFragmentArguments<FGetAsset>::SetWithSupplyDetails();
 
-template ENJINSDK_API FGetAsset&
+template ENJINSDKRUNTIME_API FGetAsset&
 TAssetFragmentArguments<FGetAsset>::SetWithTransferSettings();
 
-template ENJINSDK_API FGetAsset&
+template ENJINSDKRUNTIME_API FGetAsset&
 TAssetFragmentArguments<FGetAsset>::SetWithVariantMetadata();
 }
 }

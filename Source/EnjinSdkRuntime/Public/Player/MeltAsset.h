@@ -15,7 +15,7 @@ namespace Player
 /**
  * @brief Request for melting assets.
  */
-class ENJINSDK_API FMeltAsset final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FMeltAsset final : public GraphQl::IGraphQlRequest,
                                       public Shared::TTransactionFragmentArguments<FMeltAsset>
 {
 public:
@@ -63,46 +63,46 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Player::FMeltAsset&
+template ENJINSDKRUNTIME_API Player::FMeltAsset&
 TTransactionFragmentArguments<Player::FMeltAsset>::SetTransactionAssetIdFormat(const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Player::FMeltAsset&
+template ENJINSDKRUNTIME_API Player::FMeltAsset&
 TTransactionFragmentArguments<Player::FMeltAsset>::SetWithAssetData();
 
-template ENJINSDK_API Player::FMeltAsset&
+template ENJINSDKRUNTIME_API Player::FMeltAsset&
 TTransactionFragmentArguments<Player::FMeltAsset>::SetWithBlockchainData();
 
-template ENJINSDK_API Player::FMeltAsset&
+template ENJINSDKRUNTIME_API Player::FMeltAsset&
 TTransactionFragmentArguments<Player::FMeltAsset>::SetWithEncodedData();
 
-template ENJINSDK_API Player::FMeltAsset&
+template ENJINSDKRUNTIME_API Player::FMeltAsset&
 TTransactionFragmentArguments<Player::FMeltAsset>::SetWithError();
 
-template ENJINSDK_API Player::FMeltAsset&
+template ENJINSDKRUNTIME_API Player::FMeltAsset&
 TTransactionFragmentArguments<Player::FMeltAsset>::SetWithLogEvent();
 
-template ENJINSDK_API Player::FMeltAsset&
+template ENJINSDKRUNTIME_API Player::FMeltAsset&
 TTransactionFragmentArguments<Player::FMeltAsset>::SetWithMeta();
 
-template ENJINSDK_API Player::FMeltAsset&
+template ENJINSDKRUNTIME_API Player::FMeltAsset&
 TTransactionFragmentArguments<Player::FMeltAsset>::SetWithNonce();
 
-template ENJINSDK_API Player::FMeltAsset&
+template ENJINSDKRUNTIME_API Player::FMeltAsset&
 TTransactionFragmentArguments<Player::FMeltAsset>::SetWithReceipt();
 
-template ENJINSDK_API Player::FMeltAsset&
+template ENJINSDKRUNTIME_API Player::FMeltAsset&
 TTransactionFragmentArguments<Player::FMeltAsset>::SetWithReceiptLogs();
 
-template ENJINSDK_API Player::FMeltAsset&
+template ENJINSDKRUNTIME_API Player::FMeltAsset&
 TTransactionFragmentArguments<Player::FMeltAsset>::SetWithSignedTxs();
 
-template ENJINSDK_API Player::FMeltAsset&
+template ENJINSDKRUNTIME_API Player::FMeltAsset&
 TTransactionFragmentArguments<Player::FMeltAsset>::SetWithState();
 
-template ENJINSDK_API Player::FMeltAsset&
+template ENJINSDKRUNTIME_API Player::FMeltAsset&
 TTransactionFragmentArguments<Player::FMeltAsset>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Player::FMeltAsset&
+template ENJINSDKRUNTIME_API Player::FMeltAsset&
 TTransactionFragmentArguments<Player::FMeltAsset>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

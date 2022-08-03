@@ -13,7 +13,7 @@ namespace Model
 /**
  * @brief Models a pagination cursor for queries.
  */
-class ENJINSDK_API FPaginationCursor final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FPaginationCursor final : public Serialization::IDeserializable
 {
 public:
 	/**

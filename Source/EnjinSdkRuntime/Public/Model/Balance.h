@@ -18,7 +18,7 @@ class FWallet;
 /**
  * @brief Models a asset balance.
  */
-class ENJINSDK_API FBalance final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FBalance final : public Serialization::IDeserializable
 {
 public:
 	/**

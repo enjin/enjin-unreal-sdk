@@ -31,13 +31,13 @@ using FEventMatcher = TFunction<bool(const Model::EEventType)>;
 /**
  * @brief Registration wrapper for a listener that receives cloud events.
  */
-class ENJINSDK_API FEventListenerRegistration final
+class ENJINSDKRUNTIME_API FEventListenerRegistration final
 {
 public:
 	/**
 	 * @brief Configuration class for building an @link FEventListenerRegistration @endlink. Used internally.
 	 */
-	class ENJINSDK_API FRegistrationListenerConfiguration final
+	class ENJINSDKRUNTIME_API FRegistrationListenerConfiguration final
 	{
 	public:
 		FRegistrationListenerConfiguration() = delete;

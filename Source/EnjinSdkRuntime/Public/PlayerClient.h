@@ -12,7 +12,7 @@ namespace Sdk
 /**
  * @brief Platform client based on the player schema.
  */
-class ENJINSDK_API FPlayerClient final : public IClient,
+class ENJINSDKRUNTIME_API FPlayerClient final : public IClient,
                                          public Player::FPlayerSchema
 {
 public:
@@ -50,7 +50,7 @@ public:
 	/**
 	 * @brief Builder class for @link FPlayerClient @endlink.
 	 */
-	class ENJINSDK_API FPlayerClientBuilder final
+	class ENJINSDKRUNTIME_API FPlayerClientBuilder final
 	{
 	public:
 		/**

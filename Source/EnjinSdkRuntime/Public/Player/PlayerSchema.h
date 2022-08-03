@@ -14,7 +14,7 @@ namespace Player
 /**
  * @brief Class for sending requests in the player schema.
  */
-class ENJINSDK_API FPlayerSchema : public IPlayerSchema,
+class ENJINSDKRUNTIME_API FPlayerSchema : public IPlayerSchema,
                                    public Shared::FSharedSchema
 {
 public:

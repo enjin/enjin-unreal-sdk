@@ -13,7 +13,7 @@ namespace Util
 /**
  * @brief Basic logger class for logging messages in Unreal Engine.
  */
-class ENJINSDK_API FLogger final : public ILogger
+class ENJINSDKRUNTIME_API FLogger final : public ILogger
 {
 public:
 	/**

@@ -13,7 +13,7 @@ namespace Serialization
 /**
  * @brief Interface for serialization.
  */
-class ENJINSDK_API ISerializable
+class ENJINSDKRUNTIME_API ISerializable
 {
 public:
 	/**

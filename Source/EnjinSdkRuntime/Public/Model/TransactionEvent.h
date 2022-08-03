@@ -13,7 +13,7 @@ namespace Model
 /**
  * @brief Models a blockchain transaction event.
  */
-class ENJINSDK_API FTransactionEvent final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FTransactionEvent final : public Serialization::IDeserializable
 {
 public:
 	/**

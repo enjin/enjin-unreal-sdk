@@ -13,7 +13,7 @@ namespace Model
 /**
  * @brief Models a transfer input for transfer requests.
  */
-class ENJINSDK_API FTransferInput final : public Serialization::ISerializable
+class ENJINSDKRUNTIME_API FTransferInput final : public Serialization::ISerializable
 {
 public:
 	/**

@@ -13,7 +13,7 @@ namespace Model
 /**
  * @brief Models a project on the platform.
  */
-class ENJINSDK_API FProject final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FProject final : public Serialization::IDeserializable
 {
 public:
 	/**

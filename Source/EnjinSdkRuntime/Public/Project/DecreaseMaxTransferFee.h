@@ -14,7 +14,7 @@ namespace Project
 /**
  * @brief Request for setting the max transfer fee of an asset to a lower value.
  */
-class ENJINSDK_API FDecreaseMaxTransferFee final : public GraphQl::IGraphQlRequest,
+class ENJINSDKRUNTIME_API FDecreaseMaxTransferFee final : public GraphQl::IGraphQlRequest,
                                                    public TTransactionRequestArguments<FDecreaseMaxTransferFee>
 {
 public:
@@ -67,7 +67,7 @@ private:
 
 // region TTransactionRequestArguments
 
-template ENJINSDK_API FDecreaseMaxTransferFee&
+template ENJINSDKRUNTIME_API FDecreaseMaxTransferFee&
 TTransactionRequestArguments<FDecreaseMaxTransferFee>::SetEthAddress(FString Address);
 
 // endregion TTransactionRequestArguments
@@ -77,47 +77,47 @@ namespace Shared
 {
 // region TTransactionFragmentArguments
 
-template ENJINSDK_API Project::FDecreaseMaxTransferFee&
+template ENJINSDKRUNTIME_API Project::FDecreaseMaxTransferFee&
 TTransactionFragmentArguments<Project::FDecreaseMaxTransferFee>::SetTransactionAssetIdFormat(
 	const Model::EAssetIdFormat Format);
 
-template ENJINSDK_API Project::FDecreaseMaxTransferFee&
+template ENJINSDKRUNTIME_API Project::FDecreaseMaxTransferFee&
 TTransactionFragmentArguments<Project::FDecreaseMaxTransferFee>::SetWithAssetData();
 
-template ENJINSDK_API Project::FDecreaseMaxTransferFee&
+template ENJINSDKRUNTIME_API Project::FDecreaseMaxTransferFee&
 TTransactionFragmentArguments<Project::FDecreaseMaxTransferFee>::SetWithBlockchainData();
 
-template ENJINSDK_API Project::FDecreaseMaxTransferFee&
+template ENJINSDKRUNTIME_API Project::FDecreaseMaxTransferFee&
 TTransactionFragmentArguments<Project::FDecreaseMaxTransferFee>::SetWithEncodedData();
 
-template ENJINSDK_API Project::FDecreaseMaxTransferFee&
+template ENJINSDKRUNTIME_API Project::FDecreaseMaxTransferFee&
 TTransactionFragmentArguments<Project::FDecreaseMaxTransferFee>::SetWithError();
 
-template ENJINSDK_API Project::FDecreaseMaxTransferFee&
+template ENJINSDKRUNTIME_API Project::FDecreaseMaxTransferFee&
 TTransactionFragmentArguments<Project::FDecreaseMaxTransferFee>::SetWithLogEvent();
 
-template ENJINSDK_API Project::FDecreaseMaxTransferFee&
+template ENJINSDKRUNTIME_API Project::FDecreaseMaxTransferFee&
 TTransactionFragmentArguments<Project::FDecreaseMaxTransferFee>::SetWithMeta();
 
-template ENJINSDK_API Project::FDecreaseMaxTransferFee&
+template ENJINSDKRUNTIME_API Project::FDecreaseMaxTransferFee&
 TTransactionFragmentArguments<Project::FDecreaseMaxTransferFee>::SetWithNonce();
 
-template ENJINSDK_API Project::FDecreaseMaxTransferFee&
+template ENJINSDKRUNTIME_API Project::FDecreaseMaxTransferFee&
 TTransactionFragmentArguments<Project::FDecreaseMaxTransferFee>::SetWithReceipt();
 
-template ENJINSDK_API Project::FDecreaseMaxTransferFee&
+template ENJINSDKRUNTIME_API Project::FDecreaseMaxTransferFee&
 TTransactionFragmentArguments<Project::FDecreaseMaxTransferFee>::SetWithReceiptLogs();
 
-template ENJINSDK_API Project::FDecreaseMaxTransferFee&
+template ENJINSDKRUNTIME_API Project::FDecreaseMaxTransferFee&
 TTransactionFragmentArguments<Project::FDecreaseMaxTransferFee>::SetWithSignedTxs();
 
-template ENJINSDK_API Project::FDecreaseMaxTransferFee&
+template ENJINSDKRUNTIME_API Project::FDecreaseMaxTransferFee&
 TTransactionFragmentArguments<Project::FDecreaseMaxTransferFee>::SetWithState();
 
-template ENJINSDK_API Project::FDecreaseMaxTransferFee&
+template ENJINSDKRUNTIME_API Project::FDecreaseMaxTransferFee&
 TTransactionFragmentArguments<Project::FDecreaseMaxTransferFee>::SetWithTransactionProjectUuid();
 
-template ENJINSDK_API Project::FDecreaseMaxTransferFee&
+template ENJINSDKRUNTIME_API Project::FDecreaseMaxTransferFee&
 TTransactionFragmentArguments<Project::FDecreaseMaxTransferFee>::SetWithTransactionWalletAddress();
 
 // endregion TTransactionFragmentArguments

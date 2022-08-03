@@ -13,7 +13,7 @@ namespace GraphQl
 /**
  * @brief Models a GraphQL response error from the platform.
  */
-class ENJINSDK_API FGraphQlError final : public Serialization::IDeserializable
+class ENJINSDKRUNTIME_API FGraphQlError final : public Serialization::IDeserializable
 {
 public:
 	/**

@@ -13,7 +13,7 @@ namespace Shared
 /**
  * @brief Request for getting the latest gas prices.
  */
-class ENJINSDK_API FGetGasPrices final : public GraphQl::IGraphQlRequest
+class ENJINSDKRUNTIME_API FGetGasPrices final : public GraphQl::IGraphQlRequest
 {
 public:
 	/**

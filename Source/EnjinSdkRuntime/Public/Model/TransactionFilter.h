@@ -15,7 +15,7 @@ namespace Model
 /**
  * @brief Models a filter input for transaction queries.
  */
-class ENJINSDK_API FTransactionFilter final : public Serialization::ISerializable
+class ENJINSDKRUNTIME_API FTransactionFilter final : public Serialization::ISerializable
 {
 public:
 	/**
