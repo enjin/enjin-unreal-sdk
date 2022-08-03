@@ -10,7 +10,7 @@
 	"CreatedByURL": "https://enjin.io/",
 	"DocsURL": "https://docs.enjin.io/",
 	"SupportURL": "https://enjin.io/support",
-	"CanContainContent": false,
+	"CanContainContent": true,
 	"IsExperimentalVersion": true,
 	"Installed": true,
 	"Modules": [
