@@ -10,6 +10,7 @@
 	"CreatedByURL": "https://enjin.io/",
 	"DocsURL": "https://docs.enjin.io/",
 	"SupportURL": "https://enjin.io/support",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/ddb53fb412b844e3a62d3590caabbbfc",
 	"CanContainContent": true,
 	"IsExperimentalVersion": true,
 	"Installed": true,
