@@ -3,7 +3,7 @@
 	"Version": 1,
 	"VersionName": "1.0.0-alpha.1",
 	"FriendlyName": "Enjin SDK",
-	"EngineVersion": "4.27.0",
+	"EngineVersion": "5.0",
 	"Description": "A SDK for creating games using the Enjin blockchain platform in Unreal Engine.",
 	"Category": "Other",
 	"CreatedBy": "Enjin Pte. Ltd.",
