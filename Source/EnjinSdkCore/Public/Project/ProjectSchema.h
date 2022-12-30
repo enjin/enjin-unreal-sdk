@@ -297,6 +297,14 @@ public:
 	virtual TFuture<GraphQl::TGraphQlResponseForOnePtr<bool>>
 	UnlinkWallet(const Enjin::Sdk::Project::FUnlinkWallet& Request) override;
 
+	/**
+	 * @brief Sends the UpdateName request to the platform.
+	 * @param Request The request.
+	 * @return The future containing the response.
+	 */
+	virtual TFuture<GraphQl::TGraphQlResponseForOnePtr<Model::FTransaction>>
+	UpdateName(const FUpdateName& Request) override;
+
 protected:
 	/**
 	 * @brief Constructs an instance of this class

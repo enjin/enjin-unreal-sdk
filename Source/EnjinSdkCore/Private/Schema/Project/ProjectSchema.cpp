@@ -216,3 +216,9 @@ FProjectSchema::UnlinkWallet(const Enjin::Sdk::Project::FUnlinkWallet& Request)
 {
 	return SendRequestForOne<bool>(Request);
 }
+
+TFuture<TGraphQlResponseForOnePtr<FTransaction>>
+FProjectSchema::UpdateName(const FUpdateName& Request)
+{
+	return SendRequestForOne<FTransaction>(Request);
+}
