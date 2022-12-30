@@ -41,6 +41,7 @@
 #include "Project/SetUri.h"
 #include "Project/SetWhitelisted.h"
 #include "Project/UnlinkWallet.h"
+#include "Project/UpdateName.h"
 
 namespace Enjin
 {
@@ -330,6 +331,14 @@ public:
 	 */
 	virtual TFuture<GraphQl::TGraphQlResponseForOnePtr<bool>>
 	UnlinkWallet(const FUnlinkWallet& Request) = 0;
+
+	/**
+	 * @brief Sends the UpdateName request to the platform.
+	 * @param Request The request.
+	 * @return The future containing the response.
+	 */
+	virtual TFuture<GraphQl::TGraphQlResponseForOnePtr<Model::FTransaction>>
+	UpdateName(const FUpdateName& Request) = 0;
 };
 }
 }
