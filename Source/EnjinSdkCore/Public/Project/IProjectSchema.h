@@ -4,6 +4,7 @@
 
 #include "GraphQlResponse.h"
 #include "Model/AccessToken.h"
+#include "Model/Asset.h"
 #include "Model/Player.h"
 #include "Model/Transaction.h"
 #include "Model/Wallet.h"
@@ -22,6 +23,7 @@
 #include "Project/DecreaseMaxMeltFee.h"
 #include "Project/DecreaseMaxTransferFee.h"
 #include "Project/DeletePlayer.h"
+#include "Project/GetAssetsFromProjects.h"
 #include "Project/GetPlayer.h"
 #include "Project/GetPlayers.h"
 #include "Project/GetWallet.h"
@@ -179,6 +181,14 @@ public:
 	 */
 	virtual TFuture<GraphQl::TGraphQlResponseForOnePtr<bool>>
 	DeletePlayer(const FDeletePlayer& Request) = 0;
+
+	/**
+	 * @brief Sends the GetAssetsFromProjects request to the platform.
+	 * @param Request The request.
+	 * @return The future containing the response.
+	 */
+	virtual TFuture<GraphQl::TGraphQlResponseForManyPtr<Model::FAsset>>
+	GetAssetsFromProjects(const FGetAssetsFromProjects& Request) = 0;
 
 	/**
 	 * @brief Sends the GetPlayer request to the platform.

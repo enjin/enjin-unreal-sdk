@@ -103,6 +103,12 @@ FProjectSchema::DeletePlayer(const Enjin::Sdk::Project::FDeletePlayer& Request)
 	return SendRequestForOne<bool>(Request);
 }
 
+TFuture<TGraphQlResponseForManyPtr<FAsset>>
+FProjectSchema::GetAssetsFromProjects(const FGetAssetsFromProjects& Request)
+{
+	return SendRequestForMany<FAsset>(Request);
+}
+
 TFuture<TGraphQlResponseForOnePtr<FPlayer>>
 FProjectSchema::GetPlayer(const Enjin::Sdk::Project::FGetPlayer& Request)
 {
