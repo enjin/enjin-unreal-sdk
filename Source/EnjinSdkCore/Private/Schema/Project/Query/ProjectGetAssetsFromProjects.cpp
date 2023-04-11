@@ -9,9 +9,10 @@ using namespace Enjin::Sdk::Project;
 using namespace Enjin::Sdk::Shared;
 using namespace Enjin::Sdk::Util;
 
-FGetAssetsFromProjects::FGetAssetsFromProjects() : IGraphQlRequest(TEXT("enjin.sdk.project.FGetAssetsFromProjects")),
-                                                   TAssetFragmentArguments<FGetAssetsFromProjects>(),
-                                                   TPaginationArguments<FGetAssetsFromProjects>()
+FGetAssetsFromProjects::FGetAssetsFromProjects()
+	: IGraphQlRequest(TEXT("enjin.sdk.project.GetAssetsFromProjects")),
+	  TAssetFragmentArguments<FGetAssetsFromProjects>(),
+	  TPaginationArguments<FGetAssetsFromProjects>()
 {
 }
 
