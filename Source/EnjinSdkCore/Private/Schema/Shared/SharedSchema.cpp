@@ -36,6 +36,12 @@ TFuture<TGraphQlResponseForManyPtr<FBalance>> FSharedSchema::GetBalances(const F
 	return SendRequestForMany<FBalance>(Request);
 }
 
+TFuture<TGraphQlResponseForManyPtr<FBalance>>
+FSharedSchema::GetBalancesFromProjects(const FGetBalancesFromProjects& Request)
+{
+	return SendRequestForMany<FBalance>(Request);
+}
+
 TFuture<TGraphQlResponseForOnePtr<FGasPrices>> FSharedSchema::GetGasPrices(const FGetGasPrices& Request)
 {
 	return SendRequestForOne<FGasPrices>(Request);
