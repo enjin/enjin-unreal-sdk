@@ -13,6 +13,7 @@
 #include "Shared/GetAsset.h"
 #include "Shared/GetAssets.h"
 #include "Shared/GetBalances.h"
+#include "Shared/GetBalancesFromProjects.h"
 #include "Shared/GetGasPrices.h"
 #include "Shared/GetPlatform.h"
 #include "Shared/GetProject.h"
@@ -67,6 +68,14 @@ public:
 	 */
 	virtual TFuture<GraphQl::TGraphQlResponseForManyPtr<Model::FBalance>>
 	GetBalances(const FGetBalances& Request) = 0;
+
+	/**
+	 * @brief Sends the GetBalancesFromProjects request to the platform.
+	 * @param Request The request.
+	 * @return The future containing the response.
+	 */
+	virtual TFuture<GraphQl::TGraphQlResponseForManyPtr<Model::FBalance>>
+	GetBalancesFromProjects(const FGetBalancesFromProjects& Request) = 0;
 
 	/**
 	 * @brief Sends the GetGasPrices request to the platform.
