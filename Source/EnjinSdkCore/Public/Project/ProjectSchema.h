@@ -15,7 +15,7 @@ namespace Project
  * @brief Class for sending requests in the project schema.
  */
 class ENJINSDKCORE_API FProjectSchema : public IProjectSchema,
-                                    public Shared::FSharedSchema
+                                        public Shared::FSharedSchema
 {
 public:
 	FProjectSchema() = delete;
@@ -144,6 +144,14 @@ public:
 	 */
 	virtual TFuture<GraphQl::TGraphQlResponseForOnePtr<bool>>
 	DeletePlayer(const Enjin::Sdk::Project::FDeletePlayer& Request) override;
+
+	/**
+	 * @brief Sends the GetAssetsFromProjects request to the platform.
+	 * @param Request The request.
+	 * @return The future containing the response.
+	 */
+	virtual TFuture<GraphQl::TGraphQlResponseForManyPtr<Model::FAsset>>
+	GetAssetsFromProjects(const FGetAssetsFromProjects& Request) override;
 
 	/**
 	 * @brief Sends the GetPlayer request to the platform.

@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0-alpha.3] - 2023-04-18
+
+- Added `GetAssetsFromProjects` request to `IProjectSchema`.
+- Added `GetBalancesFromProjects` request to `ISharedSchema`.
+
 ## [1.0.0-alpha.2] - 2023-01-02
 
 ### Added
@@ -23,7 +28,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial alpha release
 
-[Unreleased]: https://github.com/enjin/enjin-unreal-sdk/compare/v1.0.0-alpha.1...HEAD
+[Unreleased]: https://github.com/enjin/enjin-unreal-sdk/compare/v1.0.0-alpha.3...HEAD
+
+[1.0.0-alpha.3]: https://github.com/enjin/enjin-unreal-sdk/compare/v1.0.0-alpha.2...v1.0.0-alpha.3
 
 [1.0.0-alpha.2]: https://github.com/enjin/enjin-unreal-sdk/compare/v1.0.0-alpha.1...v1.0.0-alpha.2
 

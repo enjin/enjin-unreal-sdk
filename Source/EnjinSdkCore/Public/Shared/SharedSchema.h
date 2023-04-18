@@ -15,7 +15,7 @@ namespace Shared
  * @brief Class for sending requests shared across schemas.
  */
 class ENJINSDKCORE_API FSharedSchema : public ISharedSchema,
-                                   public FBaseSchema
+                                       public FBaseSchema
 {
 public:
 	FSharedSchema() = delete;
@@ -56,6 +56,14 @@ public:
 	 */
 	virtual TFuture<GraphQl::TGraphQlResponseForManyPtr<Model::FBalance>>
 	GetBalances(const FGetBalances& Request) override;
+
+	/**
+	 * @brief Sends the GetBalancesFromProjects request to the platform.
+	 * @param Request The request.
+	 * @return The future containing the response.
+	 */
+	virtual TFuture<GraphQl::TGraphQlResponseForManyPtr<Model::FBalance>>
+	GetBalancesFromProjects(const FGetBalancesFromProjects& Request) override;
 
 	/**
 	 * @brief Sends the GetGasPrices request to the platform.
